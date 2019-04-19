@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="true"
+            android:text="        此方法适用于某个基站或车站整体蓄电池组脱管的情况。\n
+        1、打开终端电脑“EISUConfig”软件；\n
+        2、在打开的界面中输入本基站或者车站的服务器IP地址和登陆密码。IP地址可以从电脑桌面的“京石武基站明细（河北）”文件中查询，登陆密码为11111111。其他空不用管，保持默认即可。\n
+        3、在软件上方点击“串口设备管理”；\n
+        4、点击左边的“关闭通信”，按钮状态变成“开启通信”。间隔大约10s，点击“开启通信”，按钮状态变成“关闭通信”，保持按钮状态为“关闭通信”；\n
+        5、在软件中上处点击”智能通道数据“；\n
+        6、点击“读取数据”；\n
+        7、此时蓄电池组可恢复监控，并与网管进行核实。若仍然整体脱管，则需到现场进行处理，并适时联系厂家。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

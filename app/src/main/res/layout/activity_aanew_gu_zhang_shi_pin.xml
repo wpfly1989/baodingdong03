@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、视频头花屏、分屏、模糊等现象\n
+        此故障一般情况下出现在应急通道视频或者院落，处理方法为更换行为分析端口\n
+2、黑屏无信号\n
+        （1）若此故障出现在铁塔，直接检查近端机状态。若V1灯不规律闪烁，则直接更换近端机。如果更换完后仍然不好，则故障点出线在铁塔上的远端机或者摄像机，联系厂家上塔进行排查和处理；\n
+        （2）若此故障出现在院落：\n
+        a）检查分配器工作是否正常；\n
+        b）检查院落杆塔配电箱电源工作是否正常；\n
+        c）检查防雷器工作是否正常；\n
+        d）检查跳线与接头是否松动\n
+        （3）若此故障出线在应急通道：\n
+        a）检查分配器工作是否正常；\n
+        b）检查近端机工作是否正常；\n
+        c）检查杆塔配电箱中远端机工作是否正常；\n
+        d）检查防雷器工作是否正常；\n
+        e）检查跳线与接头是否松动\n
+        （4）若此故障出现在室内半球，通常情况下需更换室内半球\n
+3、云台不可控\n
+        （1）检查相关摄像头地址位设置是否正确。方法为进入此DVR的IP，查看地址位信息。室内视频地址位可以是任意数，通常情况下设置为0，院落地址位为1，铁塔地址位为2，应急通道地址位为3；\n
+        （2）云台设备故障，联系厂家更换云台\n
+4、DVR不可监控、整个基站视频无信号\n
+        （1）重启DVR，查看故障是否恢复；\n
+        （2）若第一步操作后仍然不可恢复，则需更换DVR，具体方法步骤为：\n
+        a）将新的DVR用网线连接显示器，修改其IP、子网掩码、网关等信息，使之数据与故障DVR一样；\n
+        b）用笔记本连接新DVR，修改笔记本本地IP，使笔记本与新DVR子网掩码和网关相同，IP地址前三位相同，最后一位不同。用IE访问DVR的IP（用户名为admin，默认密码为12345，端口号为8000）；\n
+        c）点击“设置”，然后进入“远程配置”，点击“字符串叠加”，设置每个摄像机对应的通道名称，设置完成后点击“串口参数”，点击“485”，设置相关通道地址位。室内地址位可随意设置，通常情况下设置为0，铁塔设置为2，应急通道为3，解码器类型为PELCO-D；\n
+        d）将故障DVR取下，换上新的DVR。"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</ScrollView>

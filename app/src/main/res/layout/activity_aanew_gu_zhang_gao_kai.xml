@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、高开电池更换方法：\n
+        （1）将电池组陶瓷熔断器（保险）拔出（位于机柜前端）；\n
+        （2）将连接旧电池的导线用工具与其极柱甩开。注意：工具容易同时连接电池极柱与其他导电部分造成短路；甩开的导线头用绝缘胶布缠紧；\n
+        （3）将旧电池卸下，新电池放到旧电池原来位置；\n
+        （4）用工具将导线与对应极柱固定，要适当紧固；\n
+        （5）将陶瓷熔断器（保险）插入。\n"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="2、更换电池监控模块："
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/gaokaijiankongmokuai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:lineSpacingMultiplier="1.5"
+            android:text="[点击查看]"
+            tools:ignore="HardcodedText"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:lineSpacingMultiplier="1.5"
+                android:text="3、电池故障（容量低、极柱漏液等）\n
+        此故障需要更换电池。用万用表对电池组电池进行测量，确定故障电池，更换此电池。具体方法请参考上文\n
+4、整流模块或监控模块故障\n
+        需重新插拔或者更换新的模块，具体方法请参考关于模块的详细介绍（进入任一基站，点击高频开关电源即可查看）。\n
+5、充电过流\n
+        用两根手指分别触摸电池组陶瓷熔断器后面上边的两个螺丝扣"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

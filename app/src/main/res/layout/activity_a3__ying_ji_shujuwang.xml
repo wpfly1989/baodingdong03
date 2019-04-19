@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="一、路由器POS口与传输设备（室内）连接中断：\n
+        1.GSM-R技术支持中心将核查传输侧和数据网侧设备的告警，若判断路由器POS与传输设备的光纤中断，则用光功率计检查设备的收发光，在判断具体的故障后进行光纤的更换；\n
+        2.如果传输网提供的光口故障，各车间临时利用备用155M光口倒接，保证数据网互联电路正常；\n
+        3.在启用备用155M光口时需要联系传输室网管根据网管提供的155M光口临时配置数据，用于故障光口的倒接；\n
+        4.若155M光板故障，利用备板备件更换155M板件，在更换期间单板业务将全部中断；根据业务影响范围以及重要程度考虑要点实施；\n
+二、数据网设备的POS口故障：\n
+        1.数据网设备的POS口出现故障，传输设备与其相连的端口会产生告警。登陆路由器后在POS口输入如下命令\n
+        （1）system-view 进入系统视图\n
+        （2）int POS2/0/0 比如：进入具体的某一个端口\n
+        （3）shutdown\n
+        （4）undo shutdown\n
+        以上命令是对该POS口进行关闭和开启的操作。某些时候因为网络的数据量很大，数据网设备处于自身保护的原因会将某一个端口锁死，这样进行关闭和开启操作后，故障可能会得到解决。\n
+        2.若以上方法不能解决问题，则进行POS口模块的更换；若更换POS口模块仍不能解决出现的故障，则进行POS板的更换。\n
+三、数据网设备的路由无法进行转发：\n
+        1.数据网设备的路由无法转发，这种故障网络上并不常见，一旦出现这种故障，使用如下命令来查看路由表：\n
+        Display ip routing-table\n
+        通过路由表信息，可以查出路由条目的下一条地址，在路由器上ping下一跳的地址：若ping不通，则查看路由器与下一跳地址相连的接口是否正常，或者检查两设备之间的连接线是否正常，下一跳地址所在设备的接口是否正常。\n
+        2.若能ping通下一跳地址，则说明设备本身存在故障，需要联系华为公司的技术支持对具体的故障进行定位，在技术支持的指导下进行相关的操作。或者联系华为技术支持到现场进行处理。华为技术支持电话：400-830-2118\n
+四、设备硬件故障应急预案：\n
+        1.设备宕机\n
+        设备宕机将影响本节点下挂各应用系统的业务，使得分布在核心节点的应用系统网管将无法管理对应节点的数据。发生以上情况立即重新启动设备。\n
+        2.设备与SDH之间的两条链路同时中断\n
+        设备与SDH之间的两条链路同时中断将影响各接入节点下挂各应用系统业务，分布在核心节点的应用系统网管将无法管理对应节点的数据。发生以上情况立即更换网线或单板。\n
+        3.设备与各应用系统之间的链路全部中断\n
+        设备与各应用系统之间的链路全部中断将影响各应用系统业务，使得位于核心节点的各应用系统网管无法管理各应用系统业务。发生以上情况立即更换网线或单板。\n
+        4.MPU单板故障\n
+        设备配置的两块MPU互为热备，一块故障不影响业务，接到网管通知后立即更换单板。\n
+"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>

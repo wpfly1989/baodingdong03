@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="***系统方框图***"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="系统结构："/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/gaokai_liucheng"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@mipmap/gaokailiucheng2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="交流配电："/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/gaokai_jiaoliu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="直流配电："/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/gaokai_zhiliu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="（1）工作环境温度：-5--40摄氏度\n
+（2）相对湿度：0--95%（不凝结）\n
+（3）海拔高度：小于4000m(注：2000m--3000m时，每升高100m功率下降1%，3000m--4000m时，每升高100m功率下降2%）"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="***整流模块（SMR）***"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      （1）单机输出：50A\n
+        （2）功率：2880W\n
+        （3）效率：>=91%（额定输出54Vdc时）\n
+        （4）交流输入：a)频率：45Hz--66Hz；b)电压：220Vac（单相）；176Vac--310Vac（满载）；90Vac--175Vac（50%负载，线性降功率输出）\n
+        （5）直流输出：a)标称电压：-48V；b)浮充电压：53.8V；c)均充电压：56.4V\n
+        （6）工作环境：a)工作环境温度：-5--75摄氏度（其中45--75摄氏度为线性降功率）；b)存储温度：-40--+75摄氏度；c)相对湿度：0--95%（不凝结）；
+d)高度：小于4000m；e)冷却方式：强制风冷模式\n
+        （7）系统调整：a)当监控模块（CSU）工作正常时，整流模块相关数据受监控模块控制；b)当整流模块单块工作时，即监控模块断电不工作，仅保留一台模块工作，其他模块
+抽离系统时，模块输出电压和电流由模块自身进行调节\n
+        （8）模块运行指示灯：a)AC ON：交流输入电源供电指示：b)CL:整流模块输出限流：c)RFA/FF：可能故障有：1、输出过电压；2、直流输出熔丝熔断；3、内部温度过高；
+4、过电流；5、短路；6、风扇故障\n
+        （9）内部保护：\n
+        a)输入过电压保护：当交流输入电压超过内部设定值，则模块自动停机保护。当交流输入电压恢复正常之后，模块自动恢复正常；\n
+        b)输入欠压保护：当交流输入电压低于额定工作范围，则模块会限流以降低其输出电流量，当交流输入电压继续跌落到低于内部设定保护值时，则模块自动停机保护。当交流输入电压恢复正常之后，模块自动恢复正常；\n
+        c)输出过电压保护：当整流模块直流输出电压超过内部设定值，则模块自动停机且锁住。需重新开机才能恢复；\n
+        d)输出过电流及输出短路保护：当整流模块负载超过额定值时，则模块自动限流在110%额定电流。当整流模块负载过大或输出短路时，则模块自动停机。短路或过电流故障排除后，模块可自动恢复输出；\n
+        e)输出限流保护：由操作者现场通过CSU（监控模块）设定限流值（20%--110%）；\n
+        f)模块内部温度过高保护：当模块内部（散热器）温度超过内部设定值，则模块自动停机，当温度下降后，模块自动恢复正常工作；\n
+        g)风扇故障保护：如果风扇发生故障，面板上的‘RFA/FF'红色指示灯会闪烁，同时会产生一个风扇故障告警信号给监控模块；\n
+        （10）模块安装：\n
+        a)将整流模块的两个顶针向中间拨动；\n
+        b)抓住整流模块把手，用另外一只手托住整流模块的后半截，调整整流模块的位置，保持水平匀速慢慢推入插入模块背板；\n
+        c)将整流模块的两个顶针分别向两侧拨动，锁定整流模块单机。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="***监控单元（CSU）***"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      （1）输入电压：-48Vdc(-40Vdc---60Vdc)\n
+        （2）告警：a)黄色灯：均充或告警；b)红色灯：模块高压关机；c)绿色灯：系统正常运行；d)如果这3个灯都关闭，可能的原因是监控模块内部故障；e)闪亮--黄色
+指示灯任何告警状态的发生，即包括系统也包括模块的有关告警，当告警出现时，按【返回】键可直接查看告警内容，也可进入告警菜单查看具体内容。常亮--均充时黄色指示灯亮，红色告警灯亮表示有一个或多个整流模块关机\n
+        （3）监测项目：a)模块资料；b)电池资料：c)系统状态：d)温度（电池）；e)负载总电流；f)交流输入电压、直流输出电压\n
+        （4）监控项目：a)高压停机；b)浮/均充转换；c)温度补偿/补偿上下限；d)限流模式\n
+        （5）监控单元的插拔：\n
+        a)安装时，将监控单元平放，两手水平将监控单元缓缓推入，直至监控单元与背板插接好后，面板上的拉杆会自动锁住监控单元。\n
+        b)拔出时，需要将监控单元面板上的两个拉杆向中间滑动到位，然后轻轻拔出监控单元，再完全抽离机柜。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="***高开电池***"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="     1、 电池型号为：中达电通  DCF126-12/200（12V 200AH/10HR）\n
+        2、高开电池更换方法：\n
+        （1）将电池组陶瓷熔断器（保险）拔出（位于机柜前端）；\n
+        （2）将连接旧电池的导线用工具与其极柱甩开。注意：工具容易同时连接电池极柱与其他导电部分造成短路；甩开的导线头用绝缘胶布缠紧；\n
+        （3）将旧电池卸下，新电池放到旧电池原来位置；\n
+        （4）用工具将导线与对应极柱固定，要适当紧固；\n
+        （5）将陶瓷熔断器（保险）插入。\n
+        3、更换电池监控模块：\n
+        更换电池监控模块需要配合电池组通信状态检查及修复软件。\n"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaokaidianchijiankongId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="点击查看软件介绍及更换监控模块步骤"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="***常见故障处理***"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、电池通讯状态\n
+        此故障需要更换电池监控模块，请参考上文“高开电池”第3点：更换电池监控模块\n
+2、电池故障（容量低、极柱漏液等）\n
+        此故障需要更换电池。用万用表对电池组电池进行测量，确定故障电池，更换此电池。具体方法请参考上文“高开电池”第2点：高开电池更换方法\n
+3、整流模块或监控模块故障\n
+        需重新插拔或者更换新的模块，具体方法请参考上文关于整流模块和监控模块的介绍\n
+4、充电过流\n
+        用两根手指分别触摸电池组陶瓷熔断器后面上边的两个螺丝扣"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>

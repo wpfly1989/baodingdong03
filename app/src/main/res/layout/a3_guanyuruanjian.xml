@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:textSize="25dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="一、软件内容介绍"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#228B22"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="23dp"
+            android:text="1、班组："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      该类别分别以以下几个方面对保定东高铁通信工区进行介绍。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （1）工区介绍"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      介绍工区管内负责区段、办公地点、机房及相关设备的数量、两个院落的基站数量和包含防灾的基站数量等内容，为日常记表工作或者其他统计性工作提供帮助。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （2）管内网图"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      记录班组管内各个网图。包括BTS、CTC、SCADA、车站视频、传输、道岔融雪、动环、防灾、固标、客票、瑞利通、数据网等网图。这些网图几乎涵盖了管内重要的业务，在日常维修工作中提供重要的参考。该页面最后一项为光缆芯线运用台账，由于该台账为内容比较复杂的EXCEL表格，在本app中展示会有诸多不便，固提供直接下载地址，若需要可直接从网盘下载至手机查看和编辑。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （3）人员联系"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      把班组电话本的电话都记在了此处，方便在日常工作中对相关单位的电话进行查询。手机点击号码可以直接进行呼叫，若用G网手机或者路电拨号则需要改变为G网或者路电的呼叫格式。本app收录的联系方式包括路电和个人手机号码，日常使用时应优先拨叫路电，以防由于其他单位进行人员调整导致相关人员已不在相关岗位而造成不便"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （4）定位导航"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      主要用于对基站的导航，也是本app用处最多的板块。由于基站所在位置为村庄里或者耕地附近，经常会有村里修道的情况发生，所以本板块除了日常规划最优路线之外，还能在道路不良的情况下帮助寻找其他道路，最大程度减少由于道路因素造成的时延。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （5）基站设备"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      对每个基站的公里标和基站内设备进行介绍。点击基站即可进入基站机房页面图，机房内设备位置完全按照现实设备位置描绘，点击设备按钮即可进入设备介绍页面。在设备介绍页面有对设备板件的原理介绍、指示灯状态介绍、走线介绍等内容，这些内容是日常故障处理的必备基础。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （6）应急故障"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      本板块包括管内设备应急预案（由段应急预案摘出）、日常故障（包括从设备说明书中的摘抄和个人在日常设备维护中进行的总结）、网线头和2M头的制作（通信工必备技能）等内容，在以后的版本更新中会添加更多实用的内容。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （7）仪器仪表"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      对班组日常使用的OTDR、驻波比测试仪、2M传输性能分析仪、内阻测试仪、视频工程宝、万用表、兆欧表和接地电阻测试仪进行介绍，提高作业效率。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （8）规章制度"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      记录一些最重要的规章制度，每一条都是在日常工作中严格遵守的，在红线面前不能有丝毫的马虎！"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#872657"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      （9）事件记录"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      这是一个简易的个人便签，主要用于记录和备忘有关工作的事情。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#228B22"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="23dp"
+            android:text="2、京通："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      此类别为路局、段、车间下发的各种重要文件。文件类型分为京通安等所有文件、限期内有完成任务的文件、需要不同阶段完成的文件和其他文件。这些文件都实时上传至网盘中，在app内直接点击相应项目可进入文件列表，选择需要的文件即可进行下载。
+        "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#228B22"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="23dp"
+            android:text="3、考试："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      此类别提供相关考试资料的下载。资料已上传至网盘，并且在以后的考试会提前更新。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:textSize="25dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="二、版本介绍"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      1、本版本为3.0。相对于以前的版本在页面进行了进一步更新，添加了更多的网图并且所有网图都支持放大缩小的功能，添加了一些应急预案等内容。并且额外添加了“京通”和“考试”两个类别，目的是为重要文件和相关考试资料提供远程下载，方便远程办公。\n
+        2、4.0版本目标：架设服务器，在服务器中实时更新数据，通过手机app访问，消除内容上面的局限性"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:textSize="25dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="三、特别感谢"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="20dp"
+            android:text="      本app的制作并不是一个人的功劳。在这里特别感谢李保军主任的指导意见，感谢杨秀玉主任、王健主管提供的绝大多数材料，感谢工长韩海军和同事们的支持。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:textSize="25dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="四、写在最后"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:autoLink="email"
+            android:textSize="20dp"
+            android:text="      1、编辑本app的主要目标是在查询台账、记录故障、基站定位、熟悉设备和提高技能等方面提供帮助，同时本app只是提供一个参考作用，现实中具体的问题要具体分析，灵活运用参考文件。\n
+        2、在编辑中难免会有所纰漏，如发现错误请及时联系作者改正，不胜感谢！邮箱：192388546@qq.com"/>
+    </LinearLayout>
+
+</ScrollView>

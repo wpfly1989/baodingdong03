@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="#000000"
+           android:textSize="20sp"
+           android:text="1、UPS托管故障：\n
+        （1）重启UPS，观察故障是否消除；\n
+        （2）若面板FAULT指示灯亮，需更换UPS；\n
+        （3）若BATT.LOW和REPLACE BATT灯亮，需更换电池包\n
+2、主机故障、相关监控模块故障：
+        及时联系厂家，并配合工务进行处理"
+           tools:ignore="HardcodedText" />
+   </LinearLayout>
+
+</ScrollView>

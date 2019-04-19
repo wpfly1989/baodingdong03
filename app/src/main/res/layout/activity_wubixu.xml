@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1.班前和总结会必须拍照；\n
+2.上下线工器具必须拍照；\n
+3.巡视检查设备必须拍照；\n
+4.作业结束复查必须拍照；\n
+5.利用高铁视频必须复查。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

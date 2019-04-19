@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.baodingdong.BtsActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*西门子BTS240基站板面图"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bts_mianban"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        注：各板件作用:\n1、合路器（DUAMCO)：功率合成，将两路或多路信号相加到一个端口；\n2、载频（CU）：处理数字和模拟信号；\n3、核心板（COBA)：基本核心模块"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*铁塔上BTS馈线连接示意图"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bts_tieta"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        注：功分器：功率分配器，将一个端口的信号功率等分给输出端口。功分器反过来用，就是合路器。"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:text="*BTS设备指示灯状态说明"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bts_deng"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*日常故障处理"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、降级\n
+       根据网管指示，汇报相关板件指示灯状态，检查接头情况，测量驻波比。在网管的指示下更换相关板件、紧固相关接头等\n
+（2）驻波比告警\n
+        用驻波比测试仪监测故障点，紧固故障点接头或者更换相关器件。需登高应及时联系厂家"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

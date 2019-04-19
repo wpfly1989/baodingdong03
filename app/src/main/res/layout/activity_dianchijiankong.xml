@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:gravity="center"
+            android:text="*电池组通信状态设定软件*"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        1、通过USB转串口连接线，连接笔记本USB口与动环右下角SCC模块串口。此连接线需要提前安装驱动；\n
+        2、笔记本按照顺序打开--我的电脑--管理--设备管理器--端口，查看USB转串口线的COM号；\n
+        3、打开软件，将端口号设置为第二步的COM好；\n
+        4、分别点击--打开串口--搜索地址，软件便开始从地址1开始搜索，一直搜素到255.一般情况下机房的电池总共10块，所以正常情况下会显示出地址1到地址10.若有模块监控不到或者已经损坏，则此模块通信状态故障。例如：搜索地址后显示的地址为1、2、3、4、6、7、8、9、10，则第5块电池监控模块故障。通常情况下UPS电池组地址为1、2、3、4、5、6，高开电池组电池为7、8、9、10.\n
+        5、确定该电池通信状态不好使，检查电池监控模块指示灯是否按规律闪烁，若一直灭，则此监控模块需更换，同时检查连接线是否松动；\n
+        6、当确定需要更换监控时，将旧监控模块取下，换上新的模块。每一块新的监控模块的默认地址为0，因此需要修改其地址。例如更换第5个电池的监控模块，则在软件上将（原始地址）改为0，将（更新地址）改为5.修改完毕；\n
+        7、若需要更换多个监控模块，不能同时更换所有模块集体进行地址修改。应该每更换一个监控模块，然后设定好新地址后，再更换下一个，以此类推。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

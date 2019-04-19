@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="一、传输系统应急预案："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="
+        1、线路板、交叉板、电源板故障\n
+        主要线路板、交叉板、电源板均是采用1+1热备方式进行配置，如以上单板故障，则设备会自动倒换，联系网管确认倒换状态。其他SDH单板故障，立即联系网管对确认是否影响业务，然后根据要点计划或段调度的统一安排到现场进行备板更换。如线路板故障，使用光功率计测试设备发光功率；如是光模块故障，则更换光模块。\n
+        2、2M故障：立即与网管联系，进行故障定位，带相应工具（2M线、2M头、压线钳、偏口钳、电烙铁、焊锡、焊锡膏、插线板等）立即赶往现场。到达现场后在DDF架上进行环回测试，精确定位故障点，如2M线问题，则需用备用2M线进行临时替换，然后制作正式2M线要点进行更换。\n
+        3、以太网故障：立即与网管联系，进行故障定位，带相应工具（网线、水晶头、网线钳、偏口钳等）和备板立即赶往现场。到达现场后与网管联系精确定位故障点，如是以太网板问题，进行单板重启操作，如不成功更换备板。如网线问题，立即更换备用网线。\n
+        4、电源板故障\n
+        应先判断是设备本身电源故障还是外部电源故障，根据实际情况进行电源抢修。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="二、传输系统日常故障："/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="
+        1、2M误码\n
+        （1）打环（软环或者硬环，与网管联系及听从网管安排），排除大环故障的可能性。以及分段打环，判断故障点；\n
+        （2）挂2M误码仪，从数据判断线路的通信状态；\n
+        （3）监测与2M连接的终端（协转）是否接头时候故障，检查插头是否接在正确的接口上；\n
+        2、2M线路断开告警\n
+        （1）检查2M头时候完好；\n
+        （2）检查2M线路；\n
+        （3）检查终端（协转）接头情况以及终端（协转）运行情况。若线路及接头没问题，应查看终端设备是否运行良好；\n
+        3、RJ45终端故障\n
+        （1）检查RJ45接头是否良好；\n
+        （2）若RJ45连接本单位设备，应检查本设备运行情况。若设备故障应及时处理或更换；\n
+        （3）若RJ45连接外单位设备，首先用笔记本通过网线连接故障端口，检查故障时候消失。若消失，说明通信管理侧无故障，应立即通知相关单位及时处理他们设备的故障\n
+        4、板件故障\n
+        在网管的指示下更换相关板件，并配合网管做数据。更换完后应观察一段时间后再离开"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</ScrollView>

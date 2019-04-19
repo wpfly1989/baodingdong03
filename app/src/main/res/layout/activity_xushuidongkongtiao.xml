@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="空调型号为JHFX-15LW  81TA11\n
+蜂鸟系列常规报警代码：\n
+E00：远程开关；\n
+E01：回路1高压报警；\n
+E02：回路1低压报警；\n
+E03：压缩机过载；\n
+E04：冷凝风机1过载；\n
+E21：回路2高压报警；\n
+E22：回路2低压报警；\n
+E24：冷凝风机2过载；\n
+E27：湿度传感器故障；\n
+E40：温度传感器故障；\n
+E41：风压开关报警；\n
+E43：蒸发风机1过载；\n
+E63：电加热1过载；\n
+E64：电加热2过载；\n
+E65：加湿报警；\n
+E66：烟雾报警"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

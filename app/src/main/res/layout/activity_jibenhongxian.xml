@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1.在施工、检修、故障处理等各项作业中，违章使用封连线；\n
+2.未按照规定程序，违章拆、改、配线；\n
+3.未按照铁路局信号联锁管理办法，简化联锁试验程序，联锁试验不彻底；\n
+4.违反LKJ数据管理规定，错装、漏装LKJ数据；\n
+5.未按照规定，违章上道作业。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

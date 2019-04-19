@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <Button
+            android:id="@+id/kongtiaoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="空调\n设备"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/BTSId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:singleLine="false"
+            android:text="BTS\n设备"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/chuanshuId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/BTSId"
+            android:layout_alignStart="@+id/BTSId"
+            android:layout_below="@+id/BTSId"
+            android:singleLine="false"
+            android:text="传输\n设备"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/shipinId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chuanshuId"
+            android:layout_alignStart="@+id/chuanshuId"
+            android:layout_below="@+id/chuanshuId"
+            android:singleLine="false"
+            android:text="视频\n设备"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaokaiId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/shipinId"
+            android:layout_alignStart="@+id/shipinId"
+            android:layout_below="@+id/shipinId"
+            android:singleLine="false"
+            android:text="高频\n开关电源"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/onuId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gaokaiId"
+            android:layout_alignStart="@+id/gaokaiId"
+            android:layout_below="@+id/gaokaiId"
+            android:singleLine="false"
+            android:text="ONU\n设备"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/upsId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/onuId"
+            android:layout_alignStart="@+id/onuId"
+            android:layout_below="@+id/onuId"
+            android:singleLine="false"
+            android:text="不间断供电电源(UPS)"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/fangzaiId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upsId"
+            android:layout_alignLeft="@id/upsId"
+            android:singleLine="false"
+            android:text="防灾\n设备"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/donghuanId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="动\n环\n设\n备"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/jiaoliupeidianxiangId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/upsId"
+            android:layout_alignBottom="@+id/upsId"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="交流\n配电箱"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/shuomingId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/kongtiaoId"
+            android:text="点击设备可查看具体介绍"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</ScrollView>

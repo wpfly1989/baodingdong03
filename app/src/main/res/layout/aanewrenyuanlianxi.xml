@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="通信段网管、石家庄网管电话："/>
+        <TextView
+            android:id="@+id/beijingclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="[展开]"
+            android:focusable="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/beijinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.5"
+            android:text="北京传输：\n
+01051820556\n
+北京会调（天窗点）：\n
+01051820201\n
+01051820626\n
+北京G网中心：\n
+01051826576\n
+01051827608\n
+北京视频中心：\n
+01051852296\n
+北京动环网管：\n
+01051820636\n
+北京FAS数调：\n
+01051820336\n
+北京会议工区：\n
+01051823976\n
+01051823876\n
+石家庄广播工区：\n
+031187923476\n
+石家庄电话网管（数据网管）：\n
+031187924567\n
+石家庄会议工区：\n
+031187922476\n
+石家庄ONU网管：\n
+031187923486\n
+石家庄信息科\n
+031180943037\n"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="保定车间电话："/>
+        <TextView
+            android:id="@+id/baodingclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="[展开]"
+            android:focusable="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/baodinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.5"
+            android:text="李保军主任：\n
+13722263265\n
+03127942086\n
+张艳春书记：\n
+18503218793\n
+03127942826\n
+杨秀玉主任：\n
+13933238552\n
+03127942796\n
+朱洪海主任：\n
+13582254245\n
+03127942246\n
+王建  主管：\n
+13582262881\n
+03127942966\n
+孙亚军主管：\n
+15031288883\n
+03127942926\n
+王绘然主管：\n
+13603121300\n
+03127942066\n
+马红岩主管：\n
+13932200681\n
+路电：03127942916\n
+传真：03127943460\n
+高利民主管：\n
+13503313226\n
+03127943566\n
+车间  调度：\n
+03127942426\n
+传真：\n
+03127943446\n
+网监室电话：\n
+03127942156\n"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="保定东工务电话："/>
+        <TextView
+            android:id="@+id/gongwuclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="[展开]"
+            android:focusable="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gongwulayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.5"
+            android:text="刘建新主任：\n
+15932120272\n
+031180945018\n
+车间办公室：\n
+031180945030\n
+周国华书记：\n
+18801248822\n
+031180945028\n
+检修  工区：\n
+031180945192\n
+031180945193\n
+桥梁  工区：\n
+031180945195\n
+会议室    ：\n
+031180945194\n
+接待室    ：\n
+031180945201\n
+后勤      ：\n
+031180945202\n
+应急      ：\n
+031180945203\n
+防灾  调度：\n
+031180921415\n
+庄飞  工长：\n
+13931366713\n
+张毅      ：\n
+13932205482\n"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="保定东供电电话："/>
+        <TextView
+            android:id="@+id/gongdianclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="[展开]"
+            android:focusable="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gongdianlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.5"
+            android:text="朱钰  主任：\n
+13582160502\n
+031180945188\n
+陈忠  书记：\n
+13131203836\n
+031180945189\n
+刘勇电力 技术员：\n
+18633207217\n
+031180945190\n
+张振兵电力副主任：\n
+13623221800\n
+031180945191\n
+张亚群接触网副主任：\n
+13833067875\n
+031180945187\n
+王学渊接触网技术员：\n
+15076397899\n
+赵光辉电力 技术员：\n
+18031919700\n
+13931117897\n
+杨德魁接触网技术员：\n
+13931384810\n
+车间值班室：\n
+031180945183\n
+王松林  电力工长：\n
+13833252919\n
+张静 网电工长，电力副工长：\n
+13930278093\n
+031180945185\n
+031180945184\n
+轨道  车班：\n
+031180945182\n
+高碑店供电值守点：\n
+031180945100\n
+徐水供电值守点  ：\n
+031180945143\n
+DK164-DK172基站箱变  刘工长：\n
+13932247882\n
+031180975353\n
+AT所、分区所  刘双全：\n
+13754495755\n
+031180973583\n
+姚家庄牵引变电所：\n
+031180945129\n
+高碑店东10KV配电所：\n
+031180945093\n
+保定东10KV配电所  ：\n
+031180945179\n
+保定东供电段  杨工：\n
+13931384810\n
+保定东电力综合维修工区  阚工长：\n
+13833276848\n
+031180973253\n
+031180973613\n
+保定东牵引变电所：\n
+031180945317\n
+AT所、分区所  王艳明：\n
+15930228656\n
+031180973253\n
+AT所、分区所  刘战国：\n
+13833012870\n
+靳庄AT所  蒋工长：\n
+031180945343\n
+方官分区所：\n
+031180945090\n
+臧官营AT所：\n
+031180945125\n
+崔庄AT所：\n
+031180945167\n
+西小营分区所：\n
+031180945177\n
+孙村AT所：\n
+031180945311\n
+靳庄AT所：\n
+031180945325\n"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="保定东信号电话："/>
+        <TextView
+            android:id="@+id/xinhaoclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="[展开]"
+            android:focusable="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/xinhaolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.5"
+            android:text="李志勇主任：\n
+13932286321\n
+031180945296\n
+孙富国书记：\n
+13833043398\n
+031180945306\n
+蒋致富主任：\n
+13833246249\n
+031180945276\n
+刘键  主任：\n
+14982136006\n
+13933895337\n
+车间三大员办公室：\n
+031180945246\n
+031180945256\n
+高碑店信号工长  杜光磊：\n
+18732822825\n
+031180945106\n
+高碑店信号机械室：\n
+031180945096\n
+5号  中继：\n
+031180945128\n
+徐水东信号工区  工长 唐新铮：\n
+13784955933\n
+031180945156\n
+徐水东信号机械室：\n
+031180945146\n
+保定东信号车间  曹永久：\n
+15933959190\n
+031180945196\n
+保定东信号工区 工长  张万江：\n
+18931206068\n
+031180945257\n
+保定东信号值班 工长  焦赛：\n
+18603282332\n
+031180945257\n
+于家庄信号  马哥：\n
+15933232470\n
+6号中继：\n
+031180945175\n
+7号中继：\n
+031180945314\n
+8号中继：\n
+031180945324\n"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="保定东建筑电话："/>
+        <TextView
+            android:id="@+id/jianzhuclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="[展开]"
+            android:focusable="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/jianzhulayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.5"
+            android:text="徐忠英工长：\n
+13930248158\n
+031180945181\n
+张卫国工长：\n
+15176259228\n
+031180945181\n
+车站  建筑：\n
+15933015016\n"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:text="保定东公安："/>
+            <TextView
+                android:id="@+id/gonganclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:clickable="true"
+                android:text="[展开]"
+                android:focusable="true" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gonganlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.5"
+            android:text="保定东公安 所长 张德信：\n
+15830875668\n
+031180945239\n
+保定东公安值班：\n
+031180945242\n
+保定东公安 指导员  杨志刚：\n
+15720099889\n
+徐水东警务值班：\n
+031180945133\n
+西小营警务值班：\n
+031180945176\n
+田各庄警务值班：\n
+031180945319\n
+高碑店公安  刘：\n
+15720099811\n
+031180945095\n
+031180945097
+高碑店公安  李义虎：\n
+18731169138\n"
+            tools:ignore="HardcodedText" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="车站电话："/>
+        <TextView
+            android:id="@+id/chezhanclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="[展开]"
+            android:focusable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chezhanlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.5"
+            android:text="高碑店东站  行车室：\n
+031180945102\n
+高碑店房建：\n
+031180945122\n
+高碑店东站  站长：\n
+031180945101\n
+高碑店东站  书记：\n
+031180945103\n
+高碑店东站  副站长：\n
+031180945105\n
+高碑店东站  进款室：\n
+031180945107\n
+高碑店东站  总账室（旅服故障打这个）：\n
+031180945108\n
+高碑店东站  客运值班室：\n
+031180945109\n
+高碑店东站  候车室服务台：\n
+031180945110\n
+高碑店东站  售票室：\n
+031180945118\n
+徐水东站  行车室：\n
+031180945142\n
+徐水东站  值班室：\n
+031180945162\n
+保定东站  行车室：\n
+031180945212\n
+保定东站  值班室：\n
+031180945232\n
+保定东站  站长室：\n
+031180945211\n
+保定东站  书记室：\n
+031180945213\n
+保定东站  副站长  付站辉：\n
+13303268180\n
+031180945217\n
+保定东站  副站长  付艳强：\n
+13513280560\n
+保定东站  副站长  张站长：\n
+13630839105\n
+保定东站  副站长  王站长：\n
+13931171129\n
+保定东站售票室（旅服故障打这个电话）：\n
+031180945225\n"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:text="设备厂家电话："/>
+        <TextView
+            android:id="@+id/changjiaclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:text="[展开]"
+            android:focusable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/changjialayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            tools:ignore="HardcodedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:autoLink="phone"
+            android:lineSpacingMultiplier="1.8"
+            android:text="视频  郭云鹏：\n
+13311263977\n
+空调  程师傅：\n
+15512271327\n
+传输、ONU厂家：\n
+18132067527\n
+高开、UPS厂家：\n
+18603119610\n
+会议     厂家：\n
+18733163828\n
+动环  王彦辉：\n
+18631172105\n
+防灾     厂家：\n
+13673380155"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/gaobeidiandonggaokaidianchizu1Id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="高开\n蓄电池"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaobeidiandonggaokaidianchizu2Id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gaobeidiandonggaokaidianchizu1Id"
+            android:text="高开\n蓄电池"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaobeidiandongupsdianchizuId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gaobeidiandonggaokaidianchizu2Id"
+            android:text="UPS\n蓄电池"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaobeidiandongjiaoliupeidianId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gaobeidiandonggaokaidianchizu1Id"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="交流\n配电柜"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaobeidiandonggaokaiId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/gaobeidiandongjiaoliupeidianId"
+            android:layout_below="@id/gaobeidiandongjiaoliupeidianId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="高开\n设备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaobeidiandongODFId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/gaobeidiandongjiaoliupeidianId"
+            android:layout_below="@id/gaobeidiandonggaokaiId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="ODF\n设备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaobeidiandongDDFId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/gaobeidiandongjiaoliupeidianId"
+            android:layout_below="@id/gaobeidiandongODFId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="DDF\n设备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaobeidiandongONUId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/gaobeidiandongjiaoliupeidianId"
+            android:layout_below="@id/gaobeidiandongDDFId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="ONU\n设备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/gaobeidiandong622Id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/gaobeidiandongjiaoliupeidianId"
+            android:layout_below="@id/gaobeidiandongONUId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="传输\n622"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandong10GId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/gaobeidiandong622Id"
+            android:layout_alignLeft="@id/gaobeidiandongjiaoliupeidianId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="10G\n2.5G"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandongzonghepeixianId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/gaobeidiandong10GId"
+            android:layout_alignLeft="@id/gaobeidiandongjiaoliupeidianId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="综合\n配线柜"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandongkongtiaoId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/gaobeidiandongzonghepeixianId"
+            android:layout_marginTop="20dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="空调\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandongFASId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/gaobeidiandongjiaoliupeidianId"
+            android:layout_alignBaseline="@id/gaobeidiandongjiaoliupeidianId"
+            android:layout_marginLeft="50dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="FAS\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandongshujuwangId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/gaobeidiandongFASId"
+            android:layout_alignLeft="@id/gaobeidiandongFASId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="数据网\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandonzongheshipinguiId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/gaobeidiandongshujuwangId"
+            android:layout_alignLeft="@id/gaobeidiandongFASId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="综合\n视频柜"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandonglvfushipinguiId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/gaobeidiandonzongheshipinguiId"
+            android:layout_alignLeft="@id/gaobeidiandongFASId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="旅服\n视频柜"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandongBTSId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/gaobeidiandonglvfushipinguiId"
+            android:layout_alignLeft="@id/gaobeidiandongFASId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="BTS\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandongUPSId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/gaobeidiandongBTSId"
+            android:layout_alignLeft="@id/gaobeidiandongFASId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="UPS\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/gaobeidiandongdonghuanId"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_alignBaseline="@id/gaobeidiandonggaokaiId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="动\n环\n设\n备"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</ScrollView>

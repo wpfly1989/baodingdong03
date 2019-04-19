@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*UPS异常信息（建议配合操作面板介绍，可进入任一基站点击UPS设备查看）"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="#电池模式\n
+        当UPS在【电池模式】时，电池模式指示灯LED亮，蜂鸣器每隔2秒响一声，然后UPS将通过电池向负载供电。\n
+#过载\n
+        若负载超过UPS额定容量，几秒至几分钟后，过载指示灯LED亮，蜂鸣器向用户连续发出告警，用户应该移除一些次要负载，以解除过载状况。\n
+#电池更换\n
+        这项LED功能警告用户应该更换电池了。当UPS内部的微处理器侦测到电池故障，UPS将发出【哔哔】告警，每声【哔】间隔2秒，持续0.1秒\n
+#电池低电压（电池放电模式）\n
+        该功能提醒用户所剩下的电池容量，若电池电压低至某一电位时，UPS将每隔1.25秒发出持续0.5秒的【哔哔】声，直到电池容量放尽\n
+#输出短路\n
+        当UPS在【在线模式】或【电池模式】时发生输出短路，UPS将关输出（无输出电压）。当输出短路一发生，故障指示灯亮且UPS持续告警，当短路解除后，UPS输出
+将恢复供电，若在【旁路模式】发生短路，UPS将执行自我保护，跳开输入断路器并关机。\n
+##注意：\n
+        若市电开机，发生短路，造成输入断路器跳开，在解除短路故障后，务必先按OFF键关机，待风扇停止运转时，再将断路器合上，重新开机。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*UPS简易故障排除"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、UPS不能开机\n
+        可能原因：a)未按ON键；b)市电中断而电池低压关机；c)后板输入断路器已跳开（按钮跳开）；d)UPS故障。\n
+        解决方案：(a)按ON键打开UPS；(b)等待市电恢复；(c)1、减少UPS所带负载，2、重开输入断路器（重按按钮）；(d)找售后。\n
+2、UPS电池备用时间不足\n
+        可能原因：a)电池未充满；b)UPS过载；c)电池虚弱损坏；d)充电器故障或其他原因。\n
+        解决方案：(a)重新给电池充电；(b)移除一些次要负载；(c)经常使用电池或环境温度过高，都会使电池坏的更快，若电池已近其寿命，即使电池更换指示灯未亮，也要及时更换电池；(d)找售后。\n
+3、所有指示灯均亮\n
+        可能原因：UPS内部故障。\n
+        解决方案：找售后。\n
+4、【电池更换】指示灯亮\n
+        可能原因：电池未完全充饱或电池虚弱\n
+        解决方案：1、将电池至少充电8个小时；2、更换电池。\n
+5、市电正常时，UPS扔处于电池状态\n
+        可能原因：a)无市电输入；b)后板输入断路器跳开（按键跳出）；c)过高压/低压或畸形市电。\n
+        解决方案：(a)检查输入市电；(b)1、移除部分负载，2、重新拌上输入断路器；(c)请合格电工检查输入电压。\n
+"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*更换UPS的方法"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="（注意：步骤不能打乱）\n
+        A：拆下旧的UPS：
+        1、将机架输入输出开关（位于机柜前端顶部）由正常打到旁路；\n
+        2、拔下UPS的输入插头和输出插头（位于UPS后面）\n
+        3、将UPS与电池甩开，具体步骤为：（a）将连接UPS外接电池端子排的电池与UPS甩开，注意在1）拧螺丝的过程中工具不得同时接触电池极柱与任何导电部分；2）将与电池分离的线头用绝缘胶布缠紧；（b）将UPS外接电池端子导线分别用螺丝刀拧下来，并分别用绝缘胶布缠紧\n
+        4、将UPS从机架上拿下来，并注意安全\n
+        B：换上新UPS：
+        1、将新的好的UPS放到机架上，并确定其稳定\n
+        2、将UPS与电池连接。具体步骤为：（a）用螺丝刀将电池连接线分别按对应位置拧在UPS外接端子排；（b）将导线接头与电池连接并拧紧，此处需注意：1）在导线接头与电池极柱接触的一刹那会产生电火花，注意保持距离；2）由于有两根导线需要与电池极柱连接，应该首先将与UPS连接的导线与电池接触，再将监控模块导线连接上去，否则容易烧了监控模块；3）切记要适当将螺丝拧紧\n
+        3、插入UPS输入插头与输出插头，并开机\n
+        4、将机架输入输出开关由旁路打到正常"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*UPS电池"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、电池更换方法：\n
+        （1）将电池组与UPS的连接线断开，注意不要短路，并将断开的接头用绝缘胶布缠紧；\n
+        （2）将旧电池卸下。注意不要短路，并将断开的接头用绝缘胶布缠紧；\n
+        （3）将新电池放到旧电池本来位置，并按照旧的接线顺序与位置将导线与电池极柱用螺丝刀拧紧；\n
+        （4）将UPS连接线与电池组恢复连接。注意：导线与极柱接触一刹那会产生电火花，应提前保持距离；先将UPS连接线与电池极柱连接，放完火花之后再将监控模块导线接触上去，否则容易烧坏监控模块。同时拧紧螺丝；\n
+        （5）做一次放电实验，测试电池组工作是否恢复正常。\n"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:lineSpacingMultiplier="1.5"
+                android:text="2、更换电池监控模块："
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/upsdianchijiankongmokuai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:lineSpacingMultiplier="1.5"
+                android:text="[点击查看]"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

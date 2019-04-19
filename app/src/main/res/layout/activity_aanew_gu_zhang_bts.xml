@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="一、无线系统应急预案："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="一、网络结构\n
+        京广高铁GSM-R网络无线系统采用了单网交织覆盖的方式。每奇数层或偶数层BTS网都能够单独满足系统性能要求。当某一个基站出现故障时，相邻两个小区的覆盖电平仍然能够达到系统规定的性能要求，同时保证了覆盖和业务量。GSM-R网络采用铁路沿线分布椭圆型小区，并采用定向天线，根据交织冗余的原则，使小区交错覆盖，使得铁路沿线基站覆盖高可靠性。两个小区在重叠区内的电平大于所要求的最小接收电平–90 dBm，自由空间传播条件下，覆盖重叠长度在700m以上，可以满足最高速度350 km/h系统的安全越区切换。这样，即使第一次切换失败后，也有足够的时间再次切换。\n
+二、BTS故障应急预案\n
+        1.COBA板故障\n
+        京广高铁沿线BTS单板配置为：2块COBA、 2块CU（大站BTS为3块CU），1个合路器。其中COBA采用1：1冷备方式；2个CU分别分配一个频点，一个为BCCH，另一个为TCH，如承载BCCH频点的CU发生故障，系统将BCCH自动分配至另一个CU。\n
+        如主用COBA板发生故障，系统会自动切换至备用COBA板上继续工作。维护人员经网管人员通知，到现场更换故障COBA板。\n
+        如系统未正常切换，首先由网管人员对故障COBA板进行锁闭，对其执行TEST操作，如恢复正常，解锁即可；如未恢复正常，则BTS发生脱管掉站，维护人员携带本地维护终端到现场进行手动切换，更换故障COBA板，并进行数据恢复。\n
+        2.沿线BTS CU、风扇、合路器故障\n
+        首先在RC上对故障单板进行锁闭，然后执行TEST操作，如测试通过，解锁即可；如测试未通过，可将单板重新进行删创操作，创建成功后会自动加载，如能正常加载，解锁即可，若不能正常加载，需到现场更换备板。\n
+        3.沿线BTS天馈系统故障\n
+        如天馈系统出现故障（驻波比高），则维护人员携带工器具、驻波比测试仪及相关材料到现场。首先由网管人员锁闭合路器，然后现场人员使用驻波比测试仪检查天馈线，判断故障位置，之后由专业登高人员携带工具和材料上塔检查故障点并处理。\n
+        4.BSC/TRAU/BTS设备出现宕机故障（死机、无反应、无法承载业务等）后应立即对设备进行重启操作，重启后观察系统运行情况，如需要进行数据恢复，立即使用最新备份带恢复，如果设备仍旧无法恢复，立即联系厂家工程师远程技术支持或者到现场处理。\n
+        5.BSC/TRAU/BTS设备单板全部采用双单元冗余配置，单个单板故障不会对设备造成影响，故障发生后立即用备版更换即可，如果出现异常情况或者无法恢复，立即联系厂家工程师远程技术支持或者到现场处理，诺基亚/西门子服务热线：4008208230\n
+三、应急维护处理主要包括以下几个步骤：\n
+        1.业务检查；\n
+        2.初步定位故障原因，并记录异常情况；\n
+        3.故障分析以及处理；\n
+        4.紧急求助；\n
+        5.业务恢复；\n
+        6.业务恢复后进行观察；\n
+        7.收尾工作及结束。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="二、日常故障："/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、降级\n
+       根据网管指示，汇报相关板件指示灯状态，检查接头情况，测量驻波比。在网管的指示下更换相关板件、紧固相关接头等\n
+2、驻波比告警\n
+        用驻波比测试仪监测故障点，紧固故障点接头或者更换相关器件。需登高应及时联系厂家"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+</ScrollView>

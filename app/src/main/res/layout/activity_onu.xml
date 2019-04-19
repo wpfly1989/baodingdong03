@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="**ONU单板介绍**"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、控制交换板GISE\n
+        GISE是系统的核心处理板，它主要完成下行用户类接口单板的电路状态扫描和管理功能；并提供2 K×2 K的交换网，支持上行4×E1、下行12个用户板位和一个用户测试板位以及其他从框8 M HW的交换功能；同时具备以太网总线汇聚、交换的能力，处理以太网二层协议的能力，扩展IP第三层协议的能力。\n
+        GISE采用主备工作方式，包括用户管理的主备方式和E1的互助方式。正常工作时主用GISE控制所有12个用户板，备用GISE不参与控制，但是备用GISE的4路E1可以提供给主用板共享使用。主备切换时工作正常的GISE板强行使工作异常的GISE板退出运行并交出相应的系统控制权，如管理的用户板、RS-232接口等，然后将其交出的系统控制权接管，这样大大提高了系统的可靠性。\n
+        GISE面板上有8个指示灯，有一个RST键是单板的复位键，还有一个RJ45网口用于其带外网管。\n
+        RUN 绿灯，运行指示灯，1Hz慢闪表示工作正常\n
+        ALM  红灯，故障指示灯，点亮表示单板硬件或软件故障\n
+        M/S  绿灯，主备状态指示灯，主用常亮、备用灭\n
+        N-ACT 绿灯，窄带状态指示灯，2Hz闪烁\n
+        DT 绿灯，窄带中继指示灯，常亮"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="2、模拟用户板ALC\n
+        ALC板是系统的模拟用户板，具备BORSCHT 7项基本功能，即馈电、过压保护、振铃、监视、编译码、二/四线混合转换、测试功能。\n
+        ALC板由SLIC、CODEC、译码电路、板类型读取电路等几部分组成。SLIC和CODEC电路完成用户电路具备的BORSCHT 7项基本功能。译码电路由GISE板提供的板选信号及地址信号产生出8个片选信号。板类型读取电路使GISE板可通过数据地址总线读取用户板的类型以及板在位信号。\n
+        ALC板上有3个指示灯：RUN灯、ALM灯、HOOK灯。上电时ALC板的ALM灯亮，GISE板检测ALC板无故障后，ALM灯熄灭，RUN灯亮。当GISE板检测到某一块ALC板上有一个或多个用户摘机时，则HOOK灯亮。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="3、模拟中继板TRK\n
+        模拟中继板(以下简称TRK板)提供数字交换网络和模拟中继线之间的模拟中继单元（Analogue Trunk Unit）接口。TRK板以标准的A、B两线的接口方式实现与对端市话交换网络模拟用户电路的连接，采用用户线信令的方式接入公用电话交换网。\n
+        TRK板中主要功能电路包括：保护电路、继电器电路、SLIC功能块电路、振铃和正反极检测电路、CODEC电路、AT89C52、双口RAM及一些地址、数据和信号驱动芯片。\n
+        TRK板上有3个指示灯：RUN灯、ALM灯、HOOK灯。上电时TRK板的ALM灯亮；GISE板检测TRK板无故障后，ALM灯熄灭，RUN灯亮；当GISE板检测到某一块TRK板上有一个或多个用户摘机时，则HOOK灯亮。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="4、数字接口板DIB\n
+        数字接口板DIB板可以和各种不同类型的用户数据设备联用，使各类数据用户能够同时以时分复用的方式汇合成64 kbps数据码流，进入DDN接入系统建立与远程对端用户之间的数据通信。\n
+        数字接口板DIB板向DDN网提供一条64 kbps信道，向用户提供4路接口为RS-232/V.24/V.35方式的用户数据接口，其数据速率为2.4 kbps、4.8 kbps、9.6 kbps，数据传输方式可为同步或异步。\n
+        DIB面板上有10个指示灯，有一个RST键是单板的复位键。面板上的10个灯，依次是RUN灯、ALM灯、1～8路线路灯（对应于4路数据端口TD1～TD4和RD1～RD4）。当DIB板正常运行时，RUN灯闪烁，ALM红灯灭。当某一路发送和接收数据时对应某一路的发送灯TDx和接收灯RDx（x=1，2，3，4）亮。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="5、二四线音频板AUDB\n
+        AUDB板主要完成模拟信号和PCM数字信号的相互转换，把话音和数据等信息变成数字形式进行传输，同交换机直接进行数字交换。\n
+        AUDB面板上有10个指示灯，有一个RST键是单板复位键。其板上的10个灯，依次是RUN灯、ALM灯、HL1~HL8路线路灯。HL1~HL8路线路灯对应于8路路音频接口。当AUDB板正常运行时，RUN灯亮，ALM灯灭，HL1~HL8路线路灯亮。 "
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="6、用户测试板TSLC\n
+        用户测试板TSLC主要完成内外线测试、用户话机功能及实现插入监听等功能。\n
+        TSLC面板上有3个指示灯，有一个RST键是单板的复位键。其面板上3个灯，依次是：RUN灯、ALM灯、TEST灯。当TSLC板正常运行时，RUN灯亮，ALM灯灭。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="7、电源板POWER H\POWER K\n
+        电源板POWER H\POWER K用于向各用户层提供二次电源及铃流，各层的POWER H和同层的POWER K可以实现电源互助。\n
+        它输出4种电压：+5 V，-5 V，-48 V，铃流75 VAC。一次电源馈电通过滤波器TBF提供-48 V电源，然后通过DC/AC变换模块或铃流模块提供相应电源。\n
+        在POWER H\POWER K面板上共有6个灯，依次是：ALM灯、-48 V灯、RING灯、+5 V灯、+5 VJ灯、-5 V灯。当POWER H板正常运行时，ALM灯灭，RING灯闪，-48 V灯亮，+5 V灯亮，+5 VJ灯亮，-5 V灯亮。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="8、数字用户板DLCE\n
+        提供8个2B+D接口\n
+        在DLCE面板上共有10个指示灯，从上至下一次是RUN等、ALM等、U1--U8口指示灯。DLCE板上电后，RUN灯，ALM灯不亮，同时U1--U8指示灯依次熄灭，在DLCE正常工作时，RUN灯慢闪，ALM灯灭，U1--U8灯亮表示对应的U口已经激活"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="**ONU出线情况**"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        以实际台账为准，同时可以配合测试电话进行确认"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="**ONU日常故障处理**"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        严格按照网管的要求进行故障处理。日常最容易出的故障有2方面：\n
+        1、GISE板故障，需在网管的指挥下进行板件更换，此板件支持热插拔（大多数故障都出现在GISE板上），换完后需要网管重新做数据；\n
+        2、检查线路是否有故障"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

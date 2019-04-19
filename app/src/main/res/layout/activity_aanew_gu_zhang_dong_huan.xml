@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、传输通道故障\n
+        当传输通道故障后，影响单个站点时，由现场维护人员配合网管中心对通道进行测试，通过对端口的重启或者更换端口来处理。\n
+        如果出现大面积站点不能监测，需要网管查看设备的传输通道的配置。检查是否出现通道环回，造成网络风暴的发生。\n
+2、本基站动环托管或由某个基站引起的环路断开\n
+        （1）重启动环；\n
+        （2）检查设备端以及传输端2M头是否良好；\n
+        （3）检查设备端至传输端线路是否完好无损；\n
+        （4）检查通讯板上下行指示灯是否正常闪烁，若不正常，更换传输通讯板；\n
+        （5）更换数据板或者主板或其他板件。注意：更换数据采集板需要做数据，需联系厂家\n
+3、相关监控设备托管\n
+        （1）重启动环；\n
+        （2）检查相关端口连接是否完好；\n
+        （3）检查设备运行情况。若设备故障应立即更换，并联系厂家进行修复"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>

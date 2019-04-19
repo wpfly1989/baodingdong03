@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="动环（EISU）面板图："/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/donghuan_mianban"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="        EISU（动环）的单板包括EISU子卡（EISUP板）、EISU主板（EISUM）、EISU采集扩展板（EISUS板）、ETN主板（ETNM）和EISU指示灯板（EISUL）\n
+        EISUP板是EISU的子卡，子卡主要构成CPU最小系统，进行采集数据的处理、存储等功能。\n
+        EISUM板是EISU的主板， 主要进行各种数字量及模拟量的采集、控制，数据传输等。\n
+        EISUS板是EISU的采集扩展板。\n
+        EISUL是EISU的指示灯板。\n
+        ETNM板是EISU设备的主通讯板。\n"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="动环（EISU）外部接口（串口）说明："/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/donghuan_waijiekou"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="        EISUM-X7串口（智能串口）：从左往右共16个接口，（自定义）X7.1--X7.16\n
+        EISUM-X6串口（主通讯口）：从左往右共4个接口，（自定义）X6.1--X6.4\n
+        EISUM-X5串口（数字量输出及传感器电源输出接口）：此串口有2排，各8接口共16接口，（自定义）X5.a.1--X5.a.8和X5.b.1--X5.b.8\n
+        EISUM-X4串口（温度传感器+烟感+门禁串口专用）：从左往右共8个接口，（自定义）X4.1--X4.8\n
+        EISUM-X3串口（通用AI/DI+专用DI接口）：从左往右共16接口，（自定义）X3.1--X3.16\n
+        EISUM-X2串口（蓄电池测量接口）：从左往右共4个接口，（自定义）X2.1--X2.4\n
+        EISUM-X1串口：PWR\n"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="机房设备连接说明："/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="        智能空调：X7.1（红灰）、X7.2（绿棕）\n
+        UPS：X7.9（灰）、X7.10（红）、X7.11（棕）\n
+        开关电源：X7.13（灰）、X7.14（红）、X7.15（棕）\n
+        SCC:X6.1（红）、X6.2（灰）、X6.3（绿）\n
+        PMLCU（图片抓拍单元）：X5.a.1（红灰）、X5.b.5（绿棕）\n
+        交流继电器（位于地板下）：X5.b.3（红灰）、X3.13（绿棕）\n
+        温湿度：X4.1（绿）、X4.2（红）、X4.3（灰）\n
+        烟感：X4.4（灰）、X4.5（红）、X4.6（绿）\n
+        用户视频编码器1：X5.3、X5.4\n
+        用户视频编码器2：X5.5、X5.6\n
+        智能电表1、2：X7.5（红灰）、X7.6（绿棕）\n
+        液晶显示屏：X7.5（红）、X7.6（灰）、X4.2（绿）、X4.3（棕）\n
+        蓄电池组1直流总电流：X5.b.3（红）、X5.b.5（灰）、X3.3（绿）\n
+        蓄电池组2直流总电流：X5.b.3（红）、X5.b.5（灰）、X3.4（绿）\n
+        蓄电池组3直流总电流：X5.b.3（红）、X5.b.5（灰）、X3.5（绿）\n
+        红外：X5.b.3（红）、X5.b.5（灰）、X3.9（绿）\n
+        水淹：X5.b.3（红）、X5.b.5（灰）、X3.11（绿）\n
+        玻璃破碎：X5.b.3（红）、X5.b.5（灰）、X3.12（绿）\n
+        智能门禁：X4.7（红灰）、X4.8（绿棕）\n"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="智能电表接口说明："/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="        智能电表共上下两排，上排编号为1--10，下排编号为11--20\n
+        1接口（黄绿）：接地（PGND）\n
+        2接口（黑）：0V；\n
+        3接口（蓝）：-48V；\n
+        9接口（红灰）：X7.5（通信端子COM2）\n
+        10接口（绿棕）：X7.6（通信端子COM2）\n
+        11接口（黑）：电压零线\n
+        12接口（棕）：A相电压\n
+        13接口（黄）：B相电压\n
+        14接口（蓝）：C相电压\n
+        15接口（红线）：A相电流进线\n
+        16接口（黑线）：A相电流出线\n
+        17接口（红线）：B相电流进线\n
+        18接口（黑线）：B相电流出线\n
+        19接口（红线）：C相电流进线\n
+        20接口（黑线）：C相电流出线"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="相关设备型号"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="        数字温湿度型号：ZXM10 DTH\n
+        烟感型号：JTY-GD-CA2001L\n
+        水淹传感器：SJ512C或NV3-WDT\n
+        红外型号：Micro-X-I或KX15DT\n
+        玻璃破碎探测器：FG1625T\n
+        直流电流变送器型号：YDG-HTD-4-(加减)100Adc\n
+        CT：SK HLX1 60A/15mA CT"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="常见故障处理"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、本基站动环托管或由某个基站引起的环路断开\n
+        （1）重启动环；\n
+        （2）检查设备端以及传输端2M头是否良好；\n
+        （3）检查设备端至传输端线路是否完好无损；\n
+        （4）检查通讯板上下行指示灯是否正常闪烁，若不正常，更换传输通讯板；\n
+        （5）更换数据板或者主板或其他板件。注意：更换数据采集板需要做数据，需联系厂家\n
+2、相关监控设备托管\n
+        （1）重启动环；\n
+        （2）检查相关端口连接是否完好；\n
+        （3）检查设备运行情况。若设备故障应立即更换，并联系厂家进行修复"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、控制面板说明"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="（1）前控制面板说明"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/chezhanups_qianmianban"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1. 逆流器 ON 开关：开启UPS逆流器。\n
+ 2. 逆流器OFF 开关：关闭UPS逆流器。\n
+ 3.语言选择及其它功能键：按此键可进入选择语言画面及其它功能。\n
+ 4. LCD 功能选择及警报声消除键：可选择不同的电力信息在LCD上显示及按此键超过3秒后可将警报声消除。\n
+ 5. I/P1 LED：指示输入交流电源。\n
+ 6. I/P2 LED：指示旁路交流电源。\n
+ 7. BYPASS LED：指示负载电源是由静态旁路经滤波器供给，为旁路状态。\n
+ 8. AC/DC LED：指示 UPS的AC/DC正在运转。\n
+ 9. BATTERY LED：当此LED 亮时为指示 UPS 正操作在备用模式，即内部电池正在放电中。\n
+10. DC/AC LED：指示 UPS 的DC/AC 逆流器正在运转。\n
+11. O/P LED：指示UPS 输出正常。\n
+12. EMERGENCY POWER OFF：当按此键超过1秒后可关闭UPS的运转及输出。\n
+13. LCD 液晶显示器：LCD 显示，指示UPS 运转状态，各种输出/输入及电瓶电压状态，当状态改变或按选择键时，背光会亮起一分钟。
+"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="（2）后控制面板说明"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@mipmap/chezhanups_houmianban"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、	手动旁路维护开关：使用于维修保养时，可将负载由 UPS 静态旁路供电切换至由交流市电直接供应。\n
+2、  输入端子排：连接交流市电输入。\n
+3、  输出端子排：连接负载输出。\n
+4、  电池端子排：外部电池箱可经由电池连接线连接至 UPS 电池端子排。\n
+5、  排气扇：UPS通风冷却用。\n
+6、  RS-232界面：\n
+7、  AS-400界面：\n
+8、  干接点界面：\n
+9、  远程紧急关机：\n
+10、 	SNMP适配卡：\n
+11、  电池启动键：当交流市电电源故障时，可由同时按下此键及逆流器 “ON” 键，以电池启动 UPS 逆流器，可提供稳定的交流电源。\n
+12、  主电源输入断路器：UPS的主电源输入断路器为供维护、故障排除及安全保护使用。\n
+13、  旁路电源输入断路器：UPS的旁路电源断路器为供维护、故障排除及安全保护使用。\n
+ 14、  输出断路器：使用于输出过负载保护。(UPS 具有电子式保护此为选购配备)"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="（3）电池箱说明"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@mipmap/chezhanups_dianchixiang"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="15、电池保险丝：电池保护用保险丝。\n
+16、 电池箱交流输入插座：此交流电源为当电池箱内部含充电器时所输入的AC电源。\n
+17、 电池箱输出端子排：可经电池连接线连接至UPS 电池端子排。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="2、相关操作说明"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:lineSpacingMultiplier="1.5"
+            android:text="（1）UPS开机\n
+        1、启动电池端断路器，等待约3秒；\n
+        2、启动BYPASS INPUT BREAKER；\n
+        3、启动MAIN INPUT BREAKER；\n
+        4、按下ON键听到“哔”声放开，UPS开始自检；\n
+        5、画面显示“on inverter”表示开机正常。\n
+（2）UPS关机\n
+        1、按下OFF按钮2秒；\n
+        2、完全关闭，需纤切断负载；\n
+        3、切断MAIN INPUT BREAKER；\n
+        4、切断BYPASS INPUT BREAKER；\n
+        5、待面板LCD背光完全熄灭后，切断电池断路器。\n
+（3）使用于旁路模式\n
+        1、若UPS只需在旁路模式，则只需将旁路断路器开启，则UPS运转于旁路状态。\n
+        2、若UPS需开机或充电，则务必需先将外接电池箱直流输出接至UPS电池端子排，并将电池箱保险丝安装好后3秒再开启旁路及输入断路器，则UPS正常运转于旁路模式并对电瓶充电。\n
+        3、若旁路电压超出+15%~-20%范围外，则关闭UPS输出，保护电气设备。\n
+（4）手动旁路维护开关操作\n
+        注意：当要转动”手动旁路维护开关”时，必须先把逆流器关闭后，才可以转动，否则可能发生故障。\n
+        正常转至旁路：\n
+          步骤1：关闭逆流器开关，切换 UPS 至静态旁路模式。\n
+          步骤2：切换旁路开关从 “NORMAL” 到 “BYPASS”。\n
+          步骤3：关闭交流电源输入断路器。\n
+          步骤4：拿出电池箱保险丝。\n
+        旁路转至正常：\n
+          步骤1：插入电池箱保险丝至电池保险丝座及关上闩锁。\n
+          步骤2：开启交流电源输入断路器。\n
+          步骤3：切换旁路开关从 “BYPASS” 到 “NORMAL”。\n
+          步骤4：开启逆流器开关。\n
+（5）启动逆流器\n
+        1、当UPS处于旁路模式时，压下逆流器开关”ON”键，1秒后将启动逆流器。\n
+        2、当交流电源输入故障时，可同时压下电瓶启动键及逆流器开关 “ON” 键，3秒后将启动逆流器。\n
+        3、UPS 开始自我测试时，将显示各种状态于 LCD 显示器上。\n
+        4、自我测试后负载将由逆流器供应。\n
+（6）关闭逆流器\n
+        压下逆流器关闭”OFF”键以关闭逆流器。注意：\n
+        1、如果输入存在，UPS将转换至旁路模式。\n
+        2、否则LCD将显示 ”UPS OFF WAITING” 约十秒钟直到UPS完成关机动作，此时LCD不再显示。\n
+        3、务必待LCD画面不再显示，才可将电瓶保险丝移除。\n
+"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="3、LCD显示屏显示"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        按“select”键可进入LCD屏显示画面，再次按“select”键可实现画面之间的切换。具体电力信息显示及操作为：\n
+按“select”键-->\n
+\n
+输出负载 = xx%  xxKW\n
+输出电流 = xxA\n
+版本 = xx  ID = xx\n
+\n
+按“select”键-->\n
+\n
+电瓶电压 = xxV  xx%\n
+充电电压 = xxV  浮充\n
+温度状态 = xx摄氏度\n
+\n
+按“select”键-->\n
+\n
+R相输入 = xxV  xxHz\n
+S相输入 = xxV xxHz\n
+T相输入 = xxV xxHz\n
+\n
+按“select”键-->\n
+\n
+旁路电压 = xxV xxHz\n
+逆流器 = xxV  xxHz\n
+输出电压 = xxV xxHz\n
+\n
+按“select”键回到第一个画面"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="4、系统告警及处理"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="        1、旁路模式输入电压允许范围：\n
+BYPASS HI NO O/P：\n
+        旁路电压太高，UPS不提供电力至负载。\n
+BYPASS LO NO O/P：\n
+        旁路电压太低，UPS不提供电力至负载。\n
+BYPASS EVER HI：\n
+        旁路电压曾经过高，使UPS不提供电力至负载，现UPS已恢复正常。\n
+BYPASS EVER LO：\n
+        旁路电压曾经过低，使UPS不提供电力至负载，现UPS已恢复正常。\n
+        2、系统告警：\n
+OVERLOAD XXX%：\n
+        输出过载。请将输出负载减至正常负载内\n
+BATTERY LOW：\n
+        电瓶低电位。电瓶已放电至低电位，UPS即将转态至旁路电源\n
+CHARGER FAIL：\n
+        充电器异常。请洽经销商由合格人员维修\n
+PHASE LOCK ERR：\n
+        锁相异常。请检查旁路电源频率是否在额定频率正负3Hz内\n
+FREQUENCY ERR：\n
+        频率异常。请检查输入电源相序是否正确\n
+        3、系统关机：\n
+OVERLOAD XXX%：\n
+        输出过载。请将输出负载减至额定负载的75%以内，逆流器将重新启动\n
+SHORT CIRCUIT：\n
+        输出短路。请检查输出负载是否短路，排除后需重新启动UPS\n
+BATTERY UNDER：\n
+        电瓶低电位锁机。电瓶已放至锁机电压，待至主电源回复时，逆流器将重新启动。\n
+REMOTE：\n
+        远程关机。此指令可由干接点及RS-232下达\n
+EMERGENCY STOP：\n
+        紧急关机。\n
+OVER TEMPERATURE：\n
+        过温度保护。请检查环境温度是否过高，或风扇是否正常运转。\n
+        4、异常状态及故障显示（及时联系厂家）：\n
+INVERTER TOO HI：\n
+        逆流器电压过高\n
+INVERTER TOO LOW：\n
+        逆流器电压过低\n
+DC BUS + / - HIGH：\n
+        DC BUS正/负电压过高\n
+DC BUS + / - LOW：\n
+        DC BUS正/负电压过低\n
+DC BUS OVP FAIL：\n
+        DC BUS过电压保护\n
+AC/DC FAIL：\n
+        整流升压故障\n
+        5、电池状态指示：\n
+ON BATTERY  BATT=xxxV xxx%：\n
+        哔声/每2秒，高电压或中电压；\n
+BATTERY LOW  BATT=xxxV xxx%：\n
+        哔声/每0.5秒，低电压；\n
+BATTERY UNDER! SHUT DOWN：\n
+        长的哔声，低于最小使用电压"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

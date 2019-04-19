@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="一、制作前准备：\n
+        1、双绞线的连接方法有两种：正常连接和交叉连接\n
+        2、正常连接是将双绞线的两端分别都依次按白橙、橙、白绿、蓝、白蓝、绿、白棕、棕色的顺序（这是国际EIA/TIA 568B标准）压入RJ45水晶头内。这种方法制作的网线用于计算机与集线器的连接。\n
+        交叉连接是将双绞线的一端按国际标准EIA/TIA 568B标准压入RJ45水晶头内；另一端将芯线依次按白绿、绿、白橙、蓝、白蓝、橙、白棕、棕色的顺序（这是国际EIA/TIA 568A标准）压入RJ45水晶头。\n
+二、制作步骤：\n
+        1、我们先准备好需要的材料。取一条适当长度的双绞线；若干个RJ45水晶头；一把双绞线压线钳；还有双绞线测试仪。\n
+        2、用压线钳将双绞线一端的外皮剥去3CM，然后按EIA/TIA 568B标准顺序将线芯撸直并拢。\n
+        3、将芯线放到压线钳切刀处，8根线芯要在同一平面上并拢，而且尽量直，留下一定的线芯长度约1.5CM处剪齐。\n
+        4、将双绞线插入RJ45水晶头中，插入过程均衡力度直到插到尽头。并且检查8根线芯是否已经全部充分、整齐地排列在水晶头里面。\n
+        5、用压线钳用力压紧水晶头，抽出即可。\n
+        6、一端的网线就制作好了，同样方法制作别一端网线。\n
+        7、压线的细节标准；双绞线线芯完全与水晶头接触，并有水晶头卡住双绞线的外皮。就此一条出色的网线制作完成。\n
+"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</ScrollView>

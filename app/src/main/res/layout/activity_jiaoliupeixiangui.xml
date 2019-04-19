@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="        保定东1楼交流配线柜交流电源来自UPS，其中分配的输出空开分别为：\n
+        AC输出1：四电视频；\n
+        AC输出2：前台；\n
+        AC输出3：客服视频；\n
+        AC输出16：录音仪；\n
+        AC输出17：远端机"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

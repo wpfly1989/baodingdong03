@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#000000"
+           android:textSize="20sp"
+           android:lineSpacingMultiplier="1.5"
+           android:text="        严格按照网管的要求进行故障处理。日常最容易出的故障有2方面：\n
+        1、GISE板故障，需在网管的指挥下进行板件更换，此板件支持热插拔（大多数故障都出现在GISE板上），换完后需要网管重新做数据；\n
+        2、检查线路是否有故障"
+           tools:ignore="HardcodedText" />
+   </LinearLayout>
+
+
+</ScrollView>

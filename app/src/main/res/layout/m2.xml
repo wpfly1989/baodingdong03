@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="
+        1、我们先准备好需要的材料。取一条适当长度的2M电缆；若干个75欧2M头；一把压线钳、电工刀、偏口钳、刀片等；\n
+        2、将2M电缆外皮剥开合适长度。\n
+        3、根据要求，将8芯2M电缆的芯线按照要求散开，找出线序1电缆。\n
+        4、将2M头尾部外套拧开，并将尾部外套、压接管套入同轴电缆。\n
+        5、用工具将线缆外皮剥出12mm，并对芯线进行处理，剥线时注意不要损伤屏蔽线。\n
+        6、用工具将内绝缘层剥出2mm，注意不要伤及芯线，将露出的屏蔽线左右分开，用工具剪去4mm，使屏蔽线长度为8mm。\n
+        7、将做好的2M线放入2M压接头，并进行焊接，要求焊接点圆滑无毛刺。\n
+        8、将屏蔽线捋平，尽量最大面积与2M头接地部分接触并套上压接管，注意屏蔽线不能超过压接管，用压线钳选择合适压接口压紧。\n
+"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
+</ScrollView>

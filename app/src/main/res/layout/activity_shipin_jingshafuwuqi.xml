@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、重启服务器的方法"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        在KVM中切换至需要重启的服务器，从开始菜单中选择重启电脑即可。期间会弹出一个需要说明的对话框，随便写一些字母或者数字即可，点击确定，等待片刻便可重启。（注：通常遇到服务器停止录像的功能，此时需要重启流媒体服务器，在KVM中按前排的的2可切换至流媒体服务器，重启即可）。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="2、查看磁盘状态"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        （1）打开KVM，按2切换至流媒体服务器；\n
+        （2）打开自带浏览器，输入相应的阵列的IP地址；\n
+        （3）输入账号密码。默认账号为admin，密码为12345678；\n
+        （4）打开“磁盘管理”--“RAID管理”，在此界面可查看此阵列硬盘运行状态。红色画叉的为故障硬盘"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="3、更换硬盘的方法"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        切记：一次只能换一块硬盘。若阵列有几块硬盘同时坏掉，需要在更换一块硬盘并且数据同步完后（大约需要6个小时）才可更换下一块！\n
+        （1）按照上面的方法找出故障硬盘；\n
+        （2）拔出坏硬盘，换上新硬盘；\n
+        （3）激活磁盘。如果是使用过的磁盘但没有清除配置信息，即要对磁盘进行激活，这样保证旧的数据不会轻易损坏；如果新加磁盘是新磁盘或者已清除了配置信息，则无需磁盘激活操作。方法为：点击“激活磁盘”，选择左侧列出的新添加的硬盘添加到右侧，点击“激活”\n
+        （4）设置热备盘。一个阵列必须有一个磁盘为热备。点击“设置热备盘”，在左侧选择新添加的硬盘添加到右侧，点击“创建”，则创建成功。此时可以看到磁盘界的磁盘面正在同步，几个小时后就可同步成功。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

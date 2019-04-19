@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="系统告警及处理："/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="        1、旁路模式输入电压允许范围：\n
+BYPASS HI NO O/P：\n
+        旁路电压太高，UPS不提供电力至负载。\n
+BYPASS LO NO O/P：\n
+        旁路电压太低，UPS不提供电力至负载。\n
+BYPASS EVER HI：\n
+        旁路电压曾经过高，使UPS不提供电力至负载，现UPS已恢复正常。\n
+BYPASS EVER LO：\n
+        旁路电压曾经过低，使UPS不提供电力至负载，现UPS已恢复正常。\n
+        2、系统告警：\n
+OVERLOAD XXX%：\n
+        输出过载。请将输出负载减至正常负载内\n
+BATTERY LOW：\n
+        电瓶低电位。电瓶已放电至低电位，UPS即将转态至旁路电源\n
+CHARGER FAIL：\n
+        充电器异常。请洽经销商由合格人员维修\n
+PHASE LOCK ERR：\n
+        锁相异常。请检查旁路电源频率是否在额定频率正负3Hz内\n
+FREQUENCY ERR：\n
+        频率异常。请检查输入电源相序是否正确\n
+        3、系统关机：\n
+OVERLOAD XXX%：\n
+        输出过载。请将输出负载减至额定负载的75%以内，逆流器将重新启动\n
+SHORT CIRCUIT：\n
+        输出短路。请检查输出负载是否短路，排除后需重新启动UPS\n
+BATTERY UNDER：\n
+        电瓶低电位锁机。电瓶已放至锁机电压，待至主电源回复时，逆流器将重新启动。\n
+REMOTE：\n
+        远程关机。此指令可由干接点及RS-232下达\n
+EMERGENCY STOP：\n
+        紧急关机。\n
+OVER TEMPERATURE：\n
+        过温度保护。请检查环境温度是否过高，或风扇是否正常运转。\n
+        4、异常状态及故障显示（及时联系厂家）：\n
+INVERTER TOO HI：\n
+        逆流器电压过高\n
+INVERTER TOO LOW：\n
+        逆流器电压过低\n
+DC BUS + / - HIGH：\n
+        DC BUS正/负电压过高\n
+DC BUS + / - LOW：\n
+        DC BUS正/负电压过低\n
+DC BUS OVP FAIL：\n
+        DC BUS过电压保护\n
+AC/DC FAIL：\n
+        整流升压故障\n
+        5、电池状态指示：\n
+ON BATTERY  BATT=xxxV xxx%：\n
+        哔声/每2秒，高电压或中电压；\n
+BATTERY LOW  BATT=xxxV xxx%：\n
+        哔声/每0.5秒，低电压；\n
+BATTERY UNDER! SHUT DOWN：\n
+        长的哔声，低于最小使用电压"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

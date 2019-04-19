@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="1、面板按键以及指示灯说明"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/m2ceshiyi_mianban"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="（1）状态、告警指示灯\n
+        此指示灯只指示Rx1端口或DATA端口的状态。右边的灯代表当前仪表状态，绿色灯亮表示相应的状态正常，红色灯亮表示相应的状态不正常，仪表监测到事件后红灯亮0.5秒，若0.5秒内事件又出现，红灯保持常亮。事件消失后红灯熄灭。信号左边的黄灯来表历史告警记录表示仪表监测到事件后灯亮，事件消失后灯仍保持亮，直至用“CLR HIS”清除\n
+        POWER：电源工作状态指示。绿色灯表示仪表正常工作在内部电池或外接电源供电方式，红色表示仪表工作于内部电池供电方式且内部电压处于欠压状态需及时充电，橙色表示仪表工作外接电源供电方式且外接电源正在给内部电池充电。\n
+        SIGNAL：Rx1端口或DATA端口信号状态指示。\n
+        FRAME：Rx1信号帧同步状态指示。\n
+        MFRAME：Rx1端口信号复帧同步状态指示。\n
+        CRC-4：Rx1端口信号结构指示。\n
+        PATTERN：Rx1端口或DATA端口信号图案同步指示。\n
+        AIS：Rx1端口或DATA端口输入信号AIS告警指示。\n
+        RA：Rx1端口输入信号远端帧告警。\n
+        MRA：Rx1端口输入信号远端复帧告警。\n
+        CODE ERR：Rx1端口编码误码。\n
+        FAS ERR：Rx1端口帧误码指示。\n
+        CRC ERR：Rx1端口CRC误码指示。\n
+        EBIT ERR：Rx1端口E比特误码指示。\n
+        PAT SLIP：Rx1端口或DATA端口测试图案滑码指示。\n
+        BIT ERR：Rx1端口或DATA端口比特误码指示"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="（2）、按键区\n
+        1、电源开关POWER：连续按着0.8秒，开启或者关闭仪表电源；\n
+        2、CLR HIS：告警历史显示复位键，用于清除历史告警；\n
+        3、ERR INJ：误码插入键。用于在发送信号中插入各类误码；\n
+        4、SET/TEST：设置/测试切换键，用于在设置菜单和测试结果菜单之间切换；\n
+        5、RUN/STOP：测试开始/终止键，用于开始或停止测试；\n
+        6、ESCAPE：返回键，用于从当前菜单中返回上一级菜单，最终返回主菜单；\n
+        7、ENTER：确认键，用于确认设置的项目的选择；\n
+        8、F1、F2、F3、F4以及左右的两个键，其功能由液晶显示器在键定义区显示的内容来定义；\n
+        9、上下左右的光标移动键用于移动光标。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="2、测试方法"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="        （1）将2M线与仪表连接。注意：1、通道停业务误码测试时，发送端口使用Tx，接收端口使用Rx1；2、若通道开业务误码测试时，仪表的Tx不适用，接收使用Rx1；\n
+        （2）按“RUN/STOP”键开始测试，再次按“RUN/STOP”键停止测试；\n
+        （3）测试结果：仪表与被测系统连接好后前面板无告警显示，从测试结果菜单中可以得到测试结果"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="3、测试结果分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="        Bit ERR：比特误码个数；\n
+        %Bit ERR：比特误码率；\n
+        Code ERR：编码误码个数；\n
+        %Code ERR：编码误码率；\n
+        FAS ERR：帧误码个数；\n
+        %FAS ERR：帧误码率；\n
+        CRC ERR：CEC-4误码个数；\n
+        CRC ERR：CRC-4误码率；\n
+        Ebit ERR：E比特误码个数；\n
+        %Ebit ERR：E比特误码率；\n
+        PAT Slip：图案滑动个数"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

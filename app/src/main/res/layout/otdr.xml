@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、故障点、光纤长度及损耗等测量方法"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        （1）打开OTDR，将尾纤头连接至OTDR。注意：（电量较低时OTDR无法使用当屏幕下方显示“OTDR专家、SMART OTDR、光源、功率计”，则开机正常，可以进行光纤测量。）\n
+        （2）用OTDR自带触摸笔或者手指，轻触屏幕“OTDR专家”或者“SMART OTDR”，使相对应方块变成黄色（没点击之前是灰白色，这种情况下是不能测量的）。\n
+        （3）按一下OTDR的“START/STOP”按钮，OTDR便会自动进行测量（所有的参数是OTDR自动配置的，包括波长和距离，不用亲自设置），稍等片刻屏幕便可出结果。\n
+        注意：\n
+        1、本次开机后画面可能会是上次测量或观测的界面，这种情况下可直接按“START/STOP”按钮进行测量\n
+        2、在任何情况下，按“SYSTEM”按钮可以回到主界面"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="2、查看曲线方法"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textAllCaps="false"
+            android:text="        （1）右上角可以选择用“轨迹”或者“SmartLink”查看曲线图\n
+        （2）若查看曲线图的方式为“轨迹”：\n
+        a）屏幕上方显示测量波长（1310或者1550）\n
+        b）屏幕下方显示事件号和损耗。每一个事件表示一个接头或者光纤末端。最后一个事件的距离、总损耗表示本光纤的断点距离和损耗\n
+        （3）若查看曲线图的方式为“SmarttLink”：\n
+        a）点击“曲线查看”可以回到“轨迹”界面\n
+        b）屏幕上方显示测量波长（1310或者1550）\n
+        c）屏幕中上方显示每个接点和尾纤头\n
+        d）下方显示测量波长、总损耗、链路回损和距离\n
+        e）点击各个事件的图标，使其背景变成黄色，然后点击右边“事件查看”，可以看到每个事件的类型、测量波长、距离、损耗和反射"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="3、存储方法"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        （1）点击右侧“报告”，存储模式有“仅文件、文件+txt、文件+pdf”，通常情况下选第3种“文件+pdf”\n
+        （2）点击右上角“保存全部”\n
+        （3）在界面输入名称，然后点击右侧“有效”，保存完毕"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="4、查看已经保存的文件"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        按一下“FILE”按钮，就会出现历史存储的记录"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

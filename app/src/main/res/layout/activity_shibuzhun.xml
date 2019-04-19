@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1.不准任意中断电路或业务；\n
+2.不准任意加、甩、倒换设备；\n
+3.不准任意变更电路；\n
+4.不准任意配置、修改数据；\n
+5.不准任意切断告警；\n
+6.不准借故推迟故障处理时间和隐瞒谎报故障；\n
+7.不准泄露用户信息；\n
+8.不准泄露系统口令；\n
+9.不准在系统上进行与维护无关的操作；\n
+10.不准关闭业务联络电话。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

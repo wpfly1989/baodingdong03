@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="
+        光缆线路资源运用台帐由EXCEL表做成，内容比较复杂，放在本app中效果不佳，固提供直接下载地址，如有需要可自行下载。" />
+    <TextView
+        android:id="@+id/a3taizhangxiazai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3D9140"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="点击此处下载光缆线路资源运用台账"/>
+
+
+</LinearLayout>  

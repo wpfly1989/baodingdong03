@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、从侧面开关打开仪器，听到“哔”的一声，表示设备正常启动；\n
+2、点击“单节测量”；\n
+3、在页面中填入要测量的蓄电池的电压类型和电池类型。电压类型是蓄电池为几V的电池，电池类型是蓄电池是几Ah。关于蓄电池的这些参数可以在蓄电池侧面看到。其他选项可不用填写，有仪表自动生成；\n
+4、点击“开始测量”，稍等片刻即可显示结果。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

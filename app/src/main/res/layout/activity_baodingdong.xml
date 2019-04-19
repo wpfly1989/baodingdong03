@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/baodingdongkongtiaoId"
+           android:layout_width="80dp"
+           android:layout_height="wrap_content"
+           android:textColor="#000000"
+           android:textSize="20sp"
+           android:layout_alignParentRight="true"
+           android:text="空调\n"
+           tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongjinghusuiId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="京沪穗环\n西北环"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongjinduanId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="近端机"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongyuanduanId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/baodingdongjinduanId"
+            android:text="远端机"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongBTSId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baodingdongyuanduanId"
+            android:layout_marginLeft="40dp"
+            android:text="BTS\n设备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongyuyinpeixianjiaId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/baodingdongBTSId"
+            android:layout_alignTop="@id/baodingdongBTSId"
+            android:text="语音\n配线架"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongfasId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baodingdongyuanduanId"
+            android:layout_toRightOf="@id/baodingdongyuyinpeixianjiaId"
+            android:layout_alignTop="@id/baodingdongyuyinpeixianjiaId"
+            android:text="FAS\n（数调）"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongddfId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baodingdongyuanduanId"
+            android:layout_toRightOf="@id/baodingdongfasId"
+            android:layout_alignTop="@id/baodingdongyuyinpeixianjiaId"
+            android:text="DDF\n架"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongodf1Id"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baodingdongBTSId"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="ODF\n架"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongodf2Id"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/baodingdongodf1Id"
+            android:layout_alignTop="@id/baodingdongodf1Id"
+            android:text="ODF\n架"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongshipin1Id"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/baodingdongodf2Id"
+            android:layout_alignTop="@id/baodingdongodf2Id"
+            android:text="视频柜"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongshipin2Id"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/baodingdongshipin1Id"
+            android:layout_alignTop="@id/baodingdongshipin1Id"
+            android:text="视频柜"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongshujuwangId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baodingdongodf1Id"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="数据网"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongONUId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/baodingdongshujuwangId"
+            android:layout_alignTop="@id/baodingdongshujuwangId"
+            android:text="ONU\n设备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdong622Id"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/baodingdongONUId"
+            android:layout_alignTop="@id/baodingdongONUId"
+            android:text="传输\n622"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdong10gId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/baodingdong622Id"
+            android:layout_alignTop="@id/baodingdong622Id"
+            android:text="10G\n2.5G"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+     <Button
+         android:id="@+id/baodingdong1louId"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/baodingdong10gId"
+         android:text="点击进入保定东站1楼"
+         android:textColor="#000000"
+         android:textSize="20sp"
+         tools:ignore="HardcodedText" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:lineSpacingMultiplier="1.5"
+        android:textAllCaps="false"
+        android:text="1、查看DVR端口视频状态"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.5"
+        android:textAllCaps="false"
+        android:text="        （1）、打开工程宝，按MODE功能键选择至“云台控制器”；\n
+        （2）、将DVR相关端口的同轴线头与DVR断开，并用工程宝自带的同轴缆一头连接DVR，另外一头连接到工程宝输入端VIDEO IN，仪表的LCD屏幕将显示摄像机的图像"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:lineSpacingMultiplier="1.5"
+        android:textAllCaps="false"
+        android:text="2、控制云台"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.5"
+        android:textAllCaps="false"
+        android:text="        （1）、打开工程宝，并按照上面的设置方法连接工程宝与DVR；\n
+        （2）、在“云台控制器”模式下，按“SET”键进入参数设置界面，通过仪表的上、下、左、右按键设置相关参数，具体参数可询问网管或者网监室，使本机设置的参数与所连接云台的参数一致。设置完成后按“SET”键确认存盘退出；\n
+        （3）设置完参数后，可通过仪表的上、下、左、右按键控制转动方向，按钮“变倍”、“聚焦”等可进行相应的控制"
+        tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</ScrollView>

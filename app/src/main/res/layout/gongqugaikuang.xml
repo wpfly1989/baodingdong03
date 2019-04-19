@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:lineSpacingMultiplier="1.5"
+        android:singleLine="false"
+        android:textSize="20sp"
+        android:text="      保定东高铁通信工区隶属于北京通信段保定车间，负责京广高铁K73+915m--K164+201m区段内90.286km的铁路通信设备维护保养，工区办公地点设在保定东高铁维修保养点办公楼一楼。"
+        tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:singleLine="false"
+            android:textSize="25sp"
+            android:text="一、管内设备概况："
+            tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:lineSpacingMultiplier="1.5"
+        android:singleLine="false"
+        android:textSize="20sp"
+        android:text="      1、管内机房44处：\n
+        (1)车站机房4处；\n
+        (2)保养点机房1处；\n
+        (3)通信基站机房25处；\n
+        (4)信号中继站4处；\n
+        (5)电力所厅通信机房10处。\n
+        2、铁塔32座：\n
+        (1)独管塔3座（车站）；\n
+        (2)四角管塔29座。\n
+        3、长途光缆94.533皮长公里。\n
+        4、传输系统51套。\n
+        5、电源系统43套。\n
+        6、防灾系统16套。"
+        tools:ignore="HardcodedText" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:lineSpacingMultiplier="1.5"
+          android:singleLine="false"
+          android:textSize="25sp"
+          android:text="二、管内基站概况："
+          tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:singleLine="false"
+            android:textSize="23sp"
+            android:text="       1、两个院落的基站12个："
+            tools:ignore="HardcodedText" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#000000"
+           android:lineSpacingMultiplier="1.5"
+           android:singleLine="false"
+           android:textSize="20sp"
+           android:text="
+           ZZD-GBDD07\n
+           GBDD-XSD02\n
+           GBDD-XSD06\n
+           GBDD-XSD09\n
+           XSD-BDD01\n
+           XSD-BDD06\n
+           XSD-BDD08\n
+           BDD-DZD01\n
+           BDD-DZD03\n
+           BDD-DZD07\n
+           BDD-DZD09\n
+           BDD-DZD11。"
+           tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:singleLine="false"
+            android:textSize="23sp"
+            android:text="       2、含防灾设备基站（所厅）16个："
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:singleLine="false"
+            android:textSize="20sp"
+            android:text="
+            ZZD-GBDD07\n
+            方官AT所\n
+            GBDD-XSD03\n
+            GBDD-XSD06\n
+            姚家庄牵引变电所\n
+            GBDD-XSD09\n
+            XSD-BDD01\n
+            XSD-BDD03\n
+            西小营AT所\n
+            XSD-BDD06\n
+            孙村AT所\n
+            BDD-DZD01\n
+            BDD-DZD02\n
+            BDD-DZD05\n
+            保定东牵引变电所\n
+            BDD-DZD09"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</ScrollView>

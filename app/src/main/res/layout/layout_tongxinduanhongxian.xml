@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1.无计划、超范围及点外施工；\n
+2.值班期间私自离岗；\n
+3.施工盯控期间私自离岗；\n
+4.车载设备出入库漏检、漏修；\n
+5.在有电区登顶检测机车天线；\n
+6.单人上线作业；\n
+7.无业务工单擅自制作修改数据；\n
+8.私自关闭、切断在用设备声光告警。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

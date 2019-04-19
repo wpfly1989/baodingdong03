@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="注意：车站传输622、10G与10G扩（2.5G）都是ZXMP S385"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="**传输单板介绍**"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、网元控制板NCP\n
+        网元控制板NCP提供设备网元管理功能，是系统网元级监控中心。"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@mipmap/chezhanchuanshuncp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="\n"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/chezhanchuanshuncpzhishideng"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="2、交叉时钟板CSA及CSF\n
+        交叉时钟板CSA（CSF）是整个系统功能的核心，单板完成多业务方向的业务交叉互通、 1:N PDH业务单板/数据业务单板保护倒换控制以及实现网同步几部分功能。 时钟接口板 SCI（SCIH、SCIB）为 CSA提供外部参考时钟接口。"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/chezhanchuanshucsa"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="\n"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@mipmap/chezhanchuanshucsazhishideng"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="3、公务板OW\n
+        OW板主要实现系统的公务电话功能。"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/chezhanchuanshu_ow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="4、OL1*4：4路STM-1标准光接口\n
+OL4*4：4路STM-4标准光接口\n
+OL16：1路STM-16标准光接口\n
+OL16*4：4路STM-16标准光接口\n
+OL64*2：2路STM-64标准光接口\n
+以上单板面板说明："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@mipmap/chezhanchuanshu_olzhishideng"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="5、63路E1电接口板EPE1*63\n
+       E1支路分系统实现PDH E1电信号的异步映射/去映射的功能，并提供1:N支路保护功能。"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/chezhanchuanshu_epe1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="6、增强型智能以太网处理板SEE\n
+       SEE板的主要功能是从用户侧接收以太网数据帧，进行二层交换，根据学习查找 的结果发送到相应的系统侧端口，将该端口的以太网帧进行相应的封装协议处理 后，映射到 VC-3/VC-4的实级联或虚级联组，再经过指针和开销的再生后送往系  统背板。发送方向是如上所述的逆过程。"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/chezhanchuanshu_see1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="\n"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/chezhanchuanshu_see2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="7、TGSA*8板\n
+        支持SAN接口的多业务透传单板，支持8个用户端口，系统侧提供4个2.5G业务总线，10G带宽，1+1保护"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@mipmap/chezhanchuanshu_tgsa"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="**保定东站RJ45台账**"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="SCADA站房变：STM-4-14-1、STM-4-15-1\n
+SCADA信号变：STM-4-14-2、STM-4-15-2\n
+防灾：STM-4-14-3、STM-4-15-3\n
+开关控制站：STM-4-14-4、STM-4-15-4\n
+视频监控：STM-4-14-5、STM-4-15-5\n
+远端机直放站：STM-4-14-6\n
+FAS录音仪主：10G扩2.5G：\n
+FAS录音设备：10G扩2.5G：\n
+公安管理信息（主）：数据网交换机\n
+公安管理信息（备）：数据网交换机\n
+票务：STM-16-14-1、STM-16-15-1\n
+办公：STM-16-14-2、STM-16-15-2\n"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>

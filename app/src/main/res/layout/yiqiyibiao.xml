@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/otdrId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:text="OTDR（T-BERD 6000A）\n使用方法"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/zhubobiceshiyiId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+
+        android:text="驻波比测试仪（JD723A）\n使用方法"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/m2ceshiyiId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+
+        android:text="2M传输性能分析仪（GT-1CJ）\n使用方法"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/neizuceshiyiId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:lineSpacingMultiplier="1.5"
+
+        android:gravity="center"
+        android:text="蓄电池内阻测试仪CRM2000\n使用方法"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/shipingongchengbaoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:lineSpacingMultiplier="1.5"
+        android:gravity="center"
+
+        android:text="视频工程宝STest-895\n使用方法"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

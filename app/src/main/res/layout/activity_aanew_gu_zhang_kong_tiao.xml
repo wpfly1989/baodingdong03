@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      1、压缩机高压、回风温度高、室内温度高：\n
+        a）检查滤网是否太脏，同时清洁2张滤网以及室外进风口；\n
+        b）检查上风机以及下风机，从声音以及仪表测量查看风机是否工作正常；\n
+        c）用清洁剂清洗冷凝片以及散热片；\n
+        d）检查压缩机工作是否正常，氟的量是否正常\n
+        e）检查对应空开是否正常。\n
+        2、压缩机低压：\n
+        a）检查下风机工作状态；\n
+        b）清洁蒸发片以及散热片；\n
+        c）检查氟的量是否正常。\n
+        3、气流丢失：\n
+        a）检查下风机工作状态是否正常；\n
+        b）气流丢失监控设备故障，更换此设备，或者直接将内部线短路以甩开监控设备，应急或缺少备件可使用此方法。\n
+        4、加热器过载、低温故障：\n
+        加热器故障，需修理或者更换加热器。若无备件或其他原因，可暂时关闭空调"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

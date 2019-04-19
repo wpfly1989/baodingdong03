@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+
+        <Button
+            android:id="@+id/baodingdongzonghepeixianguiId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="综合\n配线柜"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/baodingdonggaokaiId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/baodingdongzonghepeixianguiId"
+            android:layout_toRightOf="@+id/baodingdongzonghepeixianguiId"
+            android:text="高频\n开关电源"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongUPSpeixianguiId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/baodingdonggaokaiId"
+            android:layout_toRightOf="@+id/baodingdonggaokaiId"
+            android:text="交流\n配线柜"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongUPSiId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/baodingdongUPSpeixianguiId"
+            android:layout_toRightOf="@+id/baodingdongUPSpeixianguiId"
+            android:text="UPS\n设备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdonggaokaidianyuan1Id"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="高开\n电源"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdonggaokaidianyuan2Id"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/baodingdonggaokaidianyuan1Id"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="高开\n电源"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/baodingdongupsdianyuanId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="UPS\n电源"
+            tools:ignore="HardcodedText,RtlCompat" />
+        <Button
+            android:id="@+id/baodingdong1loukongtiaoId"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="450dp"
+            android:textSize="20sp"
+            android:text="空调\n设备"
+            tools:ignore="HardcodedText,RtlCompat" />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

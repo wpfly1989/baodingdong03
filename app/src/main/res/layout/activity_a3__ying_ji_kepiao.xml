@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:lineSpacingMultiplier="1.5"
+            android:text="
+       根据北京通信段京通有线电[2018]1号电报要求，为保障管内客票电路安全稳定，客票系统安全运行，确保客票电路发生障碍后的处理工作有组织、有准备、压缩障碍延时、尽快恢复正常使用，特制定本预案：\n
+       一、现状及管辖分界：\n
+       保定车间京广高铁高碑店东、保定东、定州东、正定机场客票通道为2M通道，分别由中兴S385传输622M设备、10G扩传输设备承载，津保霸徐线白沟站、白洋淀站分别由华为OSN3500传输2.5G、622M设备承载，徐水站房分别由华为OSN3500传输622M设备2块2M支路板承载。通信负责通信机房内DDF架端子（含）以内，信息部门负责通信机房内DDF架（不含）以外包括至信息机房同轴缆。\n
+       二、现场工区携带2M测试仪，备用板件，万用表，电烙铁，焊锡丝，2M自环线，2M直通头，常用工具，台账等。\n
+       三、当通信工区接到障碍申告后，立即汇报车间调度并做好记录，车间调度汇报段调度，工区人员到达现场查看设备运行状态，是否存在告警等，联系网管对障碍进行分析判断，要点后联系网管在网管指挥下，在DDF架对障碍端口进行打环测试，或连接2M测试仪进行误码测试。\n
+       1、如果判断为信息部门设备及缆线原因，通信工区配合进行处理，处理完成后及时与网管及信息人员进行核对确定恢复，现场人员将处理情况汇报车间调度，车间调度汇报段调度。\n
+       2、如果排查判断为2M支路板障碍时，要点进行更换处理，完成后并与信息部门人员及网管进行核对确定恢复，现场人员将处理情况汇报车间调度，车间调度汇报段调度。\n
+       3、如果判断为2M端口问题，要点联系网管更换端口进行倒接，完成后与信息部门人员及网管进行核对确定恢复，现场人员将处理情况汇报车间调度，车间调度汇报段调度。
+"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+</ScrollView>

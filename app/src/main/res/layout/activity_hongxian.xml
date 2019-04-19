@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1．未取得防护员资格人员担任防护员。\n
+　　2．未设置防护员上线作业。\n
+　　3．使用安全性能不良的防护装备、通讯工具和有安全缺陷的劳动防护用品用具。\n
+　　4．没有调度命令（点外上线作业除外）提前上线作业。\n
+　　5．作业过程中随意更换驻站防护员、现场防护员。\n
+　　6．防护员做与防护无关的工作。\n
+　　7．上道作业单人远离群体。\n
+　　8．作业人员在线路上接打手机。\n
+　　9．防护员擅自离岗。\n
+　　10．天窗点外违章上线作业。"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

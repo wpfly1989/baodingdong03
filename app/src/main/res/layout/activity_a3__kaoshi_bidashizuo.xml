@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="
+        该文件是由网盘直接下载到手机中，从手机中查看。这么做的目的是将来更新题库的话直接更新网盘中的文件就可以了。\n
+        注意：\n
+        云盘不提供excel文件的上传，所以该类型文件都是打包上传的，下载下来后需要解压缩。但是为了方便，同时又提供了该文件的word类型，此种文件类型下载下来不用解压可以直接查看，缺点是没有excel处理起来方便。在以后的版本中会着力解决这种问题的。\n"
+            />
+        <TextView
+            android:id="@+id/a3kaoshibidashizuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#3D9140"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="点击此处下载笔答实作的考试资料"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="
+        笔答的实作部分除了上面可下载的文件，还有一本“北京通信段应急处置手册”，天蓝色的小本。每个班组都有。"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

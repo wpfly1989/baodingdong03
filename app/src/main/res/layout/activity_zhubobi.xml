@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:lineSpacingMultiplier="1.5"
+            android:text="使用JD723A天馈线测试仪测试馈线找到故障点的方法：\n
+        1、将天馈线从设备卸掉；\n
+        2、甩掉馈线和设备之间的衰减器；\n
+        3、打开天馈线综合测试仪，查看仪表在cal on状态则不需要校准，如果仪表的状态为cal off则需要校准仪表。校准方法：点击Call键，根据仪表提示连接校准件，进行校准；\n
+        4、将馈线连接到天馈线测试仪上。\n
+        5、点击VSWR键，进入驻波比测试界面，将频率范围设置为GSM-R的使用频率范围（本工区测试仪已设置好，范围为885至934），查看驻波比是否正常。\n
+        6、点击DTF键，进入故障定位界面，根据馈线长度定义测试距离。测出故障点距测试点的距离"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="***FAS（MDS3400）单板说明***"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        1、控制层背板BKC：\n
+        控制层背板提供2个主控槽位，14个通用接口槽位。说明：a）控制层背板的1-6、9-14槽位为通用接口，可接4个32路的欧式插头。其中每对槽位之间有两排主备跳线插针，槽位2、4、6、10、12、14、16旁边标注有扩展电缆号。\nb）位于每个接口下方的是防误插旋钮，目的是防止由人为误插电路板引起的故障。通过旋转防误插旋钮，可以使旋钮上的指针分别对准A、B、C、D四个方向，代表了四
+类电路板。A、B、C、D对应的电路板如下：\n A：数字环板（DLL）、数字中继板（DTL）、铃流板（RNG）、扩展板（EXT）；\n
+B：模拟用户板（ASL）；\n
+C：数字用户板（DSL）；\n
+D：多功能接口板（MIL）、数据通信板（DCL）。\nc）JP1为保护地（PGND）；JP2为-48V电源输入；JP3为铃流输入（RING-IN）；JP4为铃流输出（RING-OUT）。\n
+d）ETH-A和ETH-B是两块主控板提供的网口，通过网线连接集线器，再通过集线器上的网线连接网管系统；CON-A和CON-B是串口。\n
+        2、扩展层背板BKX：\n
+        扩展层背板提供2个驱动槽位，14个通用接口槽位。说明：扩展层背板的7、8槽位可插驱动板，驱动板提供一个接口，可以插接4条扩展线缆（EXT1、EXT2、EXT3、EXT4）到控制层。背板上的其它器件说明请参考控制层背板。\n
+        3、3.	MPU-主控板：\n
+        a）主要功能：系统主处理机，双网双机热备份；提供4K x 4K时隙的无阻塞交换；提供64个数字信号音资源；提供128方会议；提供掉电能保持的实时时钟；提供保存一定数量话单的存储器；提供整个主机系统所需的4级时钟，具有自由振荡、跟踪、保持3种工作模式。\n
+        b）面板指示灯说明：1.ACT：绿色，主备用指示，主用为亮，备用为灭；2.RUN：绿色，运行状态指示灯，0.2S亮/0.2S灭：正常运行，亮/灭：工作不正常；3.BUSY：绿色，保留；4.ALM：红色，告警指示（保留）；5.MOD：绿色，时钟模式:亮：自由振荡模式，1S亮/1S灭：保持模式，0.25S亮/0.25S灭：跟踪模式\n
+        4、DRV-驱动板：\n
+        a）主要功能：扩展层插箱的核心板，完成话音信号的分配及通信消息的转发；作为本层单板与主控板的通信代理；支持主备用；支持软件在线升级；\n
+        b）面板指示灯说明：1.ACT：绿色，主备用指示，亮为主用，灭为备用；2.RUN，绿色，运行状态指示灯：0.2S亮/0.2S灭：正常运行，亮/灭：工作不正常；3.BUSY,绿色，保留；4.ALM，红色，告警灯\n
+        5、EXT-扩展板：\n
+        a）主要功能：控制层到扩展层的LVDS信号转换；插在控制层的通用槽位上，双板备份，无处理机\n
+        b）面板指示灯说明：ACT：绿色，主备用指示，主用为亮，备用为灭\n
+        6、RES-资源板：\n
+        a）主要功能：可插4个DSP小插板；每个插板可支持64方会议或64个DTMF/MFC收发号器；支持软件在线升级\n
+        b）面板指示灯说明：1.ACT：绿色，主备用指示，亮为主用，灭为备用；2.RUN，绿色，运行状态指示灯：1s亮/1s灭，正常运行；3.COM，绿色，与主控板通信状态指示灯：常亮：与主控板通信正常，闪：正在有数据通信；4.ALM，红色，告警指示灯：灭：正常，亮：时钟丢失告警\n
+        7、ASL-模拟用户板：\n
+        a）主要功能：单板16路用户，支持DTMF的收发，支持来电显示，能提供反极性信号；增益软件可调；接口指标符合（邮电部电话交换设备总技术规范书）的要求；在电路板上以过流、过压保护器件实现过电流、过电压防护，符合（YDN 065-1997 邮电部电话交换设备总技术规范书）第18.3章节的要求。；支持主备用；支持软件在线升级\n
+        b）面板指示灯说明：1.ACT：绿色，主备用指示，亮为主用，灭为备用；2.RUN，绿色，运行状态指示灯：1s亮/1s灭，正常运行；3.COM，绿色，与主控板通信状态指示灯：常亮：与主控板通信正常，闪：正在有数据通信；4.ALM，红色，告警指示灯：灭：正常，亮：时钟丢失告警；5.STA1--STA16，绿色，模拟用户电路状态指示：STA1--STA16常灭：话机挂机，常亮：话机摘机或者通话中，1S亮/4S灭：正在振铃，0.25S亮/0.25S灭：本路用户电路有故障\n
+        8、DSL-数字用户板：\n
+        a）主要功能：每板4路；每路提供模拟录音接口，支持B1、B2混合录音和分开录音（跳线设置）；支持我公司现有的专用调度终端；在电路板上以过流、过压保护器件实现过电流、过电压防护，符合（YDN 065-1997 邮电部电话交换设备总技术规范书）第18.3章节的要求。；接口支持主备用；支持软件在线升级\n
+        b）面板指示灯说明：1.ACT：绿色，主备用指示，亮为主用，灭为备用；2.RUN，绿色，运行状态指示灯：1s亮/1s灭，正常运行；3.COM，绿色，与主控板通信状态指示灯：常亮：与主控板通信正常，闪：正在有数据通信；4.ALM，红色，告警指示灯：灭：正常，亮：时钟丢失告警；5.STA1—STA4，绿色/红色，数字用户电路状态指示，STA1—STA4常灭：无调度台，常亮：调度台通信正常，0.25S亮/0.25S灭：链路已连接，等待数据通信正常\n
+        9、DTL-数字中继板：\n
+        a）主要功能：数字用户板每板提供8路E1接口；支持公共信令和随路信令；提取时钟；接口支持主备用；支持软件在线升级\n
+        b）面板指示灯说明：1.ACT：绿色，主备用指示，亮为主用，灭为备用；2.RUN，绿色，运行状态指示灯：1s亮/1s灭，正常运行；3.COM，绿色，与主控板通信状态指示灯：常亮：与主控板通信正常，闪：正在有数据通信；4.ALM，红色，告警指示灯：灭：正常，亮：时钟丢失告警；5.STA1-STA8，绿色，E1接口状态：亮：正常，灭：同步丢失告警\n
+        10、DLL-数字环板：\n
+        a）主要功能：数字环板每板提供8路E1接口，4个数字环；E1线支持断电直通功能(1与2直通、3与4直通、5与6直通、7与8直通)；提供256方会议，每个环64方；提取时钟；接口支持主备用；支持软件在线升级；板内为每个数字环提供8位的地址拔码开关\n
+        b）面板指示灯说明：1.ACT：绿色，主备用指示，亮为主用，灭为备用；2.RUN，绿色，运行状态指示灯：1s亮/1s灭，正常运行；3.COM，绿色，与主控板通信状态指示灯：常亮：与主控板通信正常，闪：正在有数据通信；4.ALM，红色，告警指示灯：灭：正常，亮：时钟丢失告警；5.STA1-STA8，绿色，E1接口状态：亮：正常，灭：同步丢失告警\n
+        11、MIL-多功能接口板：\n
+        a）主要功能：单板可插4个小插板；板内带DSP资源模块；支持插板类型：环路HL(1路)、磁石CS(2路)、二线音频Y2P(2路)、四线音频Y4P(2路)、选号XH(2路)、共电GD(只用于区间功能，2路)；增益软件可调；支持软件在线升级\n
+        b）面板指示灯说明：1.ACT：绿色，主备用指示，亮为主用，灭为备用；2.RUN，绿色，运行状态指示灯：1s亮/1s灭，正常运行；3.COM，绿色，与主控板通信状态指示灯：常亮：与主控板通信正常，闪：正在有数据通信；4.ALM，红色，告警指示灯：灭：正常，亮：时钟丢失告警；5.STA1-STA8，绿色，多功能接口板状态指示\n
+        12、RNG-铃流板：\n
+        a）主要功能：支持主备用；产生铃流和磁石铃流，各30瓦；提供过压、过流保护；提供告警指示\n
+        b）面板指示灯说明：1.RING,绿色，铃流输出指示，亮：铃流输出正常，灭：铃流输出故障；2.SRING，绿色，磁石铃流输出指示，亮：磁石铃流输出正常，灭：磁石铃流输出故障；3.ALM，红色，告警指示，亮：本板故障告警，灭：本板正常\n"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="***语音记录仪***"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        设备名称：RW-R01铁路运输通信数字式语音记录仪\n
+        录音仪前面板图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/fas_qianmianban"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        录音仪的后面板："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/fas_houmianban"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        后面板说明：通道1-6对应6个录音通道，每个通道又分主通、助通2路；话机以可插入一部普通的自动话机，功能同触摸屏，可对记录仪进行设置、查询、监听等操作；外线口接本地电话交换网，可对记录仪进行远程查询；网线接局域交换网，可通过网络对记录仪进行远程操作；直流接直流电源20V-60V，接入时不用分极性；交流接市电的220V即可"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        外线采用DB-9插座："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@mipmap/fas_waixian"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        记录仪的安装：根据上图接入相关外线以及电源线，通电后电源灯常亮，运行灯闪。若是电控方式有电控信号输入对应通道灯常亮，同时启动录音，电控信号无，对应路灯灭，停止录音；若是声控方式有语音信号输入，对应通遒灯常亮，同时启动录音，音频信号无，延迟10秒后对应路灯灭，停止录音。液晶屏显示如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/fas_yejingpin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        语音记录仪的操作使用：\n
+        1、本机参数设定与查询：\n
+        按液晶上半部分点亮背光，按下半部分有语音提示并且记录仪液晶显示为下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_shurumima"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        这时可输入系统设定密码或查询密码，出厂机器分别设定为666666（维护级）与888888（普通级）。输入密码后若密码不正确则液晶显示如下图，无任何操作40秒后返回。\n
+        提示：按*退出本级菜单："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_mimacuowu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        若密码正确则液晶屏显示主菜单如下："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_zhucaidan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        在主菜单下输入1进入查询状态，液晶屏显示如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_chaxun1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        输入要查询的通道号后液晶屏显示如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_chaxun2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        输入年月日时分各2位的时间，若查到要放送语音，开始放音并显示，如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_chaxun3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        上一个时间显示本段语音的开始时间，下一个时间显示本段语音的结束时间。放音时按0跳到上一段记录；按#跳到下一段记录；一条播放完后自动播放下一条录音；按9重复本段记录，再按9结束重复；随时按*键退出。若无可放送语音，则液晶屏显示如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_chaxun4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      在主菜单下输入2进入监听状态，输入通道号，可对任意通道监听，监听完后按*键退出"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_jianting"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      在主菜单下输入3，进入系统设定状态，若前面输入的是查询密码，则液晶屏显示如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_sheding"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      输入6位密码，若输入错误后可随时按*键返回，则液晶屏显示如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_sheding2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      若两次相同则返回主菜单，若不相同则液晶屏显示如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fas_sheding3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      若前面输入的是系统密码，则液晶屏显示设定菜单如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/fas_sheding4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      在设定菜单下输入1可以修改时间，输入日期与时间后返回设定菜单。\n
+        在设定菜单下输入2液晶屏显示如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/fas_sheding5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      分别输入6路的通道录音方式（0为电控，1为声控），接着输入放音的音量控制，其数值为1-9（1最大，9最小），借助输入背光，数值为1-9,1的对比度最弱，即屏幕最亮，9的对比度最强，即屏幕最黑，用户可根据情况进行调试。输入完毕后按*退出后，系统将自动复位，重新启动后使输入值生效。\n
+        在设定菜单下输入3，可对系统密码进行修改，过程同查询密码修改。\n
+        在设定菜单下输入4可以对存储卡格式化。输入1确认格式化CF卡，录音内容将全部被清除，输入完毕按*退出后，系统将复位重新启动使输入值生效。\n
+        在设定菜单下输入6设置站号，输入4位站号返回主菜单。\n
+        在设定菜单下输入7进行IP设置状态，如下图："
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/fas_sheding6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      按输入顺序分别输入本级的网关、子网掩码、IP地址。输入完毕后按*退出，系统复位使设置生效。\n
+        在设定菜单下输入8可对触摸屏进行校正（如下图），分别对应数字1、2、3、4对数字键盘的四个角按顺序用笔尖轻触，即完成对屏幕的校正。屏幕在出厂时都已经经过校正，无需再校。如遇特殊情况触摸屏无法使用不能进入校屏菜单时，可用自动电话插到话机口进入菜单，然后对屏幕进行校正。"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/fas_sheding7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      2、自动电话语音查询：\n
+        确认自动电话线已经与记录仪的电话外线口相连，从远端拨通电话，听到提示音“请输入6位密码”后，请输入查询密码。若密码错误，会听到提示音“密码错误请输入6位密码”，若密码正确会听到提示音“请选择功能1查询2监听，退出请挂机”\n
+        输入1后会听到提示音“请输入查询通道号”，输入查询通道号会听到提示音“请输入查询时间”，时间格式同上，输入查询时间后，若有录音内容则开始放音，这时候可按0跳到上一段语音，按#跳到下一段语音，按*会听到提示音“请选择功能1查询2监听，退出请挂机”。若无录音会听到提示音“请输入查询通道号”。\n
+        输入2后会听到提示音“请输入监听通道号”，输入监听通道号方可监听对应通道。按*退出。\n
+        查询完毕后挂机。（查询过程中，可在任何时刻挂机退出）\n
+        \n
+        3、计算机远程查询：\n
+        记录仪可以通过网络与中心查询主系统连接。中心查询系统可以对记录仪进行查询、监听、设置等操作，在操作过程中对记录仪的正常工作无任何影响。\n
+        \n
+        4、扩容：\n
+        打开机箱，取出cf卡，根据需要插入更大容量的cf卡，装好机箱，打开电源，进入设定菜单，选择格式化，格式化新装cf卡。\n
+        注意，由于市场上的cf卡存在兼容性问题，品质高低不一，请使用厂家验证过的型号，或直接从厂家购买。"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>

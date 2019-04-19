@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="点击设备可查看具体介绍"/>
+        <Button
+            android:id="@+id/peidiansuoshipinId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:text="视频\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/peidiansuoONUId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/peidiansuoshipinId"
+            android:layout_alignBaseline="@id/peidiansuoshipinId"
+            android:text="ONU\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/peidiansuochuanshuId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/peidiansuoONUId"
+            android:layout_alignBaseline="@id/peidiansuoONUId"
+            android:text="传输\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/peidiansuogaokaiId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+           android:layout_below="@id/peidiansuoshipinId"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:text="高开\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/peidiansuoupsId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/peidiansuoshipinId"
+            android:layout_toRightOf="@id/peidiansuogaokaiId"
+            android:layout_alignBaseline="@id/peidiansuogaokaiId"
+            android:text="UPS\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/peidiansuodonghuanId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/peidiansuogaokaiId"
+            android:layout_marginTop="20dp"
+            android:text="动\n环\n设\n备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/peidiansuokongtiaoId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/peidiansuodonghuanId"
+            android:layout_marginTop="10dp"
+            android:text="空调\n设备"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</ScrollView>

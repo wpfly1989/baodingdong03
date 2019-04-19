@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:lineSpacingMultiplier="1.5"
+        android:text="        此设备属于直放站设备\n
+        光纤直放站主要由两部分组成：近端机和远端机。近端机的主要作用是从基站BTS拾取信号，同时也把远端机中继过来的信号传送给基站。远端机的主要作用是保证弱场区的场强覆盖，把BTS下来的信号进行功率放大，同时把移动台来的信号上传给基站，它是光纤直放站的主要设备。\n
+        近端机和远端机之间靠光纤连接，采用光纤波分复用技术，每台远端机只需要一条光纤和近端机连接，下行使用1310nm波长的光窗口，上行使用1550nm波长的光窗口。提供光调制解调功能的设备称为光端机，光端机提供上行和下行两个透明的射频传输通道，Rfin信号调制到光发射器；光接收器把调制在光上的信号还原为Rfout。经过光调制解调后，输出的底部噪声电平比较高，为了保证信号的信噪比，输入的射频信号应大于50dBm"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
+

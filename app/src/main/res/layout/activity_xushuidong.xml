@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/xushuidongODFId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="ODF\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongDDFId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongODFId"
+            android:layout_alignLeft="@id/xushuidongODFId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="DDF\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongchuanshuId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongDDFId"
+            android:layout_alignLeft="@id/xushuidongODFId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="传输\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongONUId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongchuanshuId"
+            android:layout_alignLeft="@id/xushuidongODFId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="ONU\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongBTSId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongONUId"
+            android:layout_alignLeft="@id/xushuidongODFId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="BTS\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongdonghuanId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongBTSId"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="动环设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongUPSId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/xushuidongODFId"
+            android:layout_alignBaseline="@id/xushuidongODFId"
+            android:layout_marginLeft="30dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="UPS\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidonggaokaiId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongUPSId"
+            android:layout_alignLeft="@id/xushuidongUPSId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="高开\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongjiaoliupeidianId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidonggaokaiId"
+            android:layout_alignLeft="@id/xushuidongUPSId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="交流\n配电"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongFASId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongjiaoliupeidianId"
+            android:layout_alignLeft="@id/xushuidongUPSId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="FAS\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongshipinId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongFASId"
+            android:layout_alignLeft="@id/xushuidongUPSId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="视频\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongUPSdianchizuId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:lineSpacingMultiplier="1.5"
+            android:text="UPS\n电池组"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidonggaokaidianchizu1Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidongUPSdianchizuId"
+            android:layout_alignLeft="@id/xushuidongUPSdianchizuId"
+            android:layout_marginTop="20dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="高开\n电池组"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidonggaokaidianchizu2Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidonggaokaidianchizu1Id"
+            android:layout_alignLeft="@id/xushuidongUPSdianchizuId"
+            android:lineSpacingMultiplier="1.5"
+            android:text="高开\n电池组"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/xushuidongkontiaoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/xushuidonggaokaidianchizu2Id"
+            android:layout_alignLeft="@id/xushuidongUPSdianchizuId"
+            android:layout_marginTop="30dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="空调\n设备"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</ScrollView>

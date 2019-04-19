@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="点击设备可查看具体介绍"/>
+
+        <Button
+            android:id="@+id/suotingkongtiaoId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="空调\n设备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/suotingchuanshuId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50dp"
+            android:text="传输\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/suotingONUId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/suotingchuanshuId"
+            android:layout_marginLeft="50dp"
+            android:text="ONU\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/suotingshipinId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/suotingONUId"
+            android:layout_marginLeft="50dp"
+            android:text="视频\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/suotinggaokaiId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+           android:layout_marginTop="150dp"
+            android:layout_toRightOf="@id/suotingchuanshuId"
+            android:layout_marginLeft="20dp"
+            android:text="高开\n设备"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/suotingupsId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@id/suotinggaokaiId"
+            android:layout_alignLeft="@id/suotinggaokaiId"
+            android:text="UPS\n设备"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/suotingdonghuanId"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suotingshipinId"
+            android:text="动\n环\n设\n备"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

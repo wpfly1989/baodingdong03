@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*****S330单板介绍******"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        EPE1*21板：\n
+a）单板名称--21路E1电处理板；\nb）作用--实现E1电信号的映射和解映射，每块板最多可以处理21路E1电信号；\nc）面板说明--面板上有3个指示灯，由上至下依次为RUN绿灯（运行状态指示灯）、M/S绿灯（主备用指示灯）和ALM红灯（告警指示灯）。正常运行为：RUN 1Hz周期性闪烁并且ALM 长灭，其他状态不正常；M/S常亮表示本板处于主用状态，长灭表示备用状态\n
+        LP4*1板：\n
+a）单板名称--1路STM-4线路处理板；\nb）作用--支持1路STM-4信号处理功能；\nc）面板说明--面板上有3个指示灯，由上至下依次为RUN绿灯（运行状态指示灯）、M/S绿灯（工作指示灯）和ALM红灯（告警指示灯）。正常运行为：RUN 1Hz周期性闪烁并且ALM 长灭，其他状态不正常；M/S为工作指示灯，正常工作情况下长亮\n
+        SC板：\n
+a）单板名称--时钟板；\nb）作用--为S330各单元提供系统时钟信号、系统帧头信号等；\nc）面板说明--面板上有3个指示灯，由上至下依次为RUN绿灯（运行状态指示灯）、M/S绿灯（时钟状态指示灯）和ALM红灯（告警指示灯）。正常运行为：RUN 1Hz周期性闪烁并且ALM 长灭，其他状态不正常；M/S闪烁：快捕或跟踪或自由振荡状态。M/S灯长亮：保持状态。M/S长灭：备用状态\n
+        CSB板：\n
+a）单板名称--B型交叉板；\nb）作用--实现多方向之间业务互通，监视功能等；\nc）面板说明--面板上有3个指示灯，由上至下依次为RUN绿灯（运行状态指示灯）、M/S绿灯（主备用指示灯）和ALM红灯（告警指示灯）。正常运行为：RUN 1Hz周期性闪烁并且ALM 长灭，其他状态不正常；M/S常亮表示本板处于主用状态，长灭表示备用状态\n
+        SFE*6板：\n
+a）单板名称--智能快速以太网处理板，6路WAN板；\nb）作用--处理以太网或电信号；\nc）面板说明--面板上有3个指示灯，由上至下依次为RUN绿灯（运行状态指示灯）、M/S绿灯（主备用指示灯）和ALM红灯（告警指示灯）。正常运行为：RUN 1Hz周期性闪烁并且ALM 长灭，其他状态不正常；M/S常亮表示本板处于主用状态，长灭表示备用状态\n
+        NCP板：\n
+a）单板名称--网元控制板；\nb）作用--网元控制和OW（公务）功能；\nc）面板说明--RUN 1Hz周期性闪烁并且ALM 长灭为正常状态，其他状态不正常；OW是红绿灯，公务振铃指示灯，正常情况下周期闪烁绿灯，有公务电话呼入时长亮红灯；f接口：保留；Qx接口：网元与SMCC（子网管理控制中心）通讯接口，采用RJ45插座；公务电话接口（OW）：公务电话接口，接口采用RJ11插座；
+截铃开关（BELL-OFF）：控制告警是否响铃，当单板有告警时，如果告警响铃，按压截铃开关停止振铃，但单板有新告警时，会继续响铃；复位键（RESET）：按压该按键，可复位单板；放静电手环插座（ESD GROUND）：用于插接防静电手环。"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*****DDF应用表******"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        应急：STM-4-2-1（主）、STM-4-3-1（备）\n
+        基站（BTS）：STM-4-2-2（主）、STM-4-3-2（备）\n
+        动环：STM-4-2-3（主）、STM-4-3-3（备）\n"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*****RJ45端子应用表******"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="        SCADA箱变：STM-4-13-1（主）、STM-4-14-1（备）\n
+        防灾：STM-4-13-2（主）、STM-4-14-2（备）\n
+        视频监控：STM-4-13-3"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="*****日常故障处理******"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="1、2M误码\n
+        （1）打环（软环或者硬环，与网管联系及听从网管安排），排除大环故障的可能性。以及分段打环，判断故障点；\n
+        （2）挂2M误码仪，从数据判断线路的通信状态；\n
+        （3）监测与2M连接的终端（协转）是否接头时候故障，检查插头是否接在正确的接口上；\n
+2、2M线路断开告警\n
+        （1）检查2M头时候完好；\n
+        （2）检查2M线路；\n
+        （3）检查终端（协转）接头情况以及终端（协转）运行情况。若线路及接头没问题，应查看终端设备是否运行良好；\n
+3、RJ45终端故障\n
+        （1）检查RJ45接头是否良好；\n
+        （2）若RJ45连接本单位设备，应检查本设备运行情况。若设备故障应及时处理或更换；\n
+        （3）若RJ45连接外单位设备，首先用笔记本通过网线连接故障端口，检查故障时候消失。若消失，说明通信管理侧无故障，应立即通知相关单位及时处理他们设备的故障\n
+4、板件故障\n
+        在网管的指示下更换相关板件，并配合网管做数据。更换完后应观察一段时间后再离开"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>

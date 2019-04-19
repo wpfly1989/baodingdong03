@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      防灾系统监控单元一般设置于铁路沿线GSM-R基站防灾机房内，便于现场监测信息的就近接入。\n
+      采用模块化结构组成，主要由监控主机、继电器组合、电源组合、UPS电源（供电系统）、防雷模块、动态驱动电路、应急电源、接口电路等组成。
+"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:background="@mipmap/fangzai_zhengti"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="      监控单元采用模块化结构，同一监控单元可同时接入多个不同种类监测设备。\n
+        一个监控单元机柜可以接入2个异物监测点、2个气象监测点，若增加监测设备则需要增加机柜，增加的机柜内主要放置继电器组合、信号专用电源、扩展模块等。\n
+        单监控单元容量最大配置如下：\n
+        2异物、2气象\n
+        1异物、3气象\n
+        0异物、4气象\n
+        1个地震监测点+2气象\n
+        监控主机为双套设计，任何一套故障，不影响设备运行。\n
+        配线接口端子模块化设计，维护时易识别。\n
+        外电源双路引入\n
+        机柜内部双UPS设计\n
+        供电时间不少于3小时\n
+        电源设备为双套设计，任何一套故障，不影响设备运行。\n
+\n
+        监控主机在一个机笼中安装了两套独立的系统。主要包括电源模块、CPU板卡、串口卡、I/O卡（无异物监测点的，无I/O卡）。设备板卡布置示意图如下（后视图、机柜前面看不见），左边为A机，右边为B机。\n
+"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/fangzai_zhuji"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="\n"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:background="@mipmap/fangzai_xiangxi"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="常见故障处理\n"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="1、UPS托管故障：\n
+        （1）重启UPS，观察故障是否消除；\n
+        （2）若面板FAULT指示灯亮，需更换UPS；\n
+        （3）若BATT.LOW和REPLACE BATT灯亮，需更换电池包\n
+2、主机故障、相关监控模块故障：
+        及时联系厂家，并配合工务进行处理"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>
